@@ -162,7 +162,7 @@ function DesktopStickyScroll() {
       </div>
 
       {/* Right — scrolling screens */}
-      <div className="space-y-16">
+      <div className="space-y-10">
         {desktopScreens.map((screen, i) => (
           <div
             key={screen.id}
@@ -211,15 +211,15 @@ export default function CarHomeCase() {
       </div>
 
       {/* Hero */}
-      <header className="py-20 border-b border-slate-100">
+      <header className="py-10 border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-center gap-3 mb-4">
             <span className="text-xs font-semibold text-blue-500 tracking-widest uppercase">Case Study</span>
             <span className="text-slate-200">·</span>
             <span className="text-xs text-slate-400">Insurance · UX Design</span>
           </div>
 
-          <h1 className="text-5xl font-bold text-slate-900 leading-tight mb-6" style={{ maxWidth: 640 }}>
+          <h1 className="text-5xl font-bold text-slate-900 leading-tight mb-4" style={{ maxWidth: 640 }}>
             Car and home quote and buy flow
           </h1>
 
@@ -227,7 +227,7 @@ export default function CarHomeCase() {
             A self-serve digital journey enabling customers to get a quote and purchase car and home insurance products online.
           </p>
 
-          <div className="flex flex-wrap gap-2 mt-8">
+          <div className="flex flex-wrap gap-2 mt-5">
             {['UX Design', 'Interaction Design', 'Insurance', 'B2C'].map(tag => (
               <span key={tag} className="px-3 py-1 bg-slate-100 text-slate-600 text-sm rounded-full font-medium">
                 {tag}
@@ -238,9 +238,9 @@ export default function CarHomeCase() {
       </header>
 
       {/* Section A — Desktop */}
-      <section className="py-24 bg-white">
+      <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="mb-16">
+          <div className="mb-10">
             <p className="text-xs font-semibold text-blue-500 tracking-widest uppercase mb-3">Section A</p>
             <h2 className="text-4xl font-bold text-slate-900 mb-4">01. Empowering the User</h2>
             <p className="text-lg text-slate-500" style={{ maxWidth: 520 }}>
@@ -252,9 +252,9 @@ export default function CarHomeCase() {
       </section>
 
       {/* Section B — Mobile */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-12 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="mb-14">
+          <div className="mb-8">
             <p className="text-xs font-semibold text-blue-500 tracking-widest uppercase mb-3">Section B</p>
             <h2 className="text-4xl font-bold text-slate-900 mb-4">02. Frictionless Onboarding</h2>
             <p className="text-lg text-slate-500" style={{ maxWidth: 520 }}>
