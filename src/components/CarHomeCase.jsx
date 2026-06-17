@@ -200,7 +200,7 @@ export default function CarHomeCase() {
 
       {/* Nav back */}
       <div className="border-b border-slate-100">
-        <div className="max-w-5xl mx-auto px-8 py-4">
+        <div className="max-w-7xl mx-auto px-4 py-4">
           <Link to="/" className="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-slate-900 transition-colors">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -212,7 +212,7 @@ export default function CarHomeCase() {
 
       {/* Hero */}
       <header className="py-20 border-b border-slate-100">
-        <div className="max-w-5xl mx-auto px-8">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center gap-3 mb-6">
             <span className="text-xs font-semibold text-blue-500 tracking-widest uppercase">Case Study</span>
             <span className="text-slate-200">·</span>
@@ -253,7 +253,7 @@ export default function CarHomeCase() {
 
       {/* Section B — Mobile */}
       <section className="py-24 bg-slate-50">
-        <div className="max-w-5xl mx-auto px-8">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="mb-14">
             <p className="text-xs font-semibold text-blue-500 tracking-widest uppercase mb-3">Section B</p>
             <h2 className="text-4xl font-bold text-slate-900 mb-4">02. Frictionless Onboarding</h2>
