@@ -130,7 +130,7 @@ function DesktopStickyScroll() {
   }
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-10 items-start">
+    <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-10 items-start">
       {/* Left — sticky annotation */}
       <div className="lg:sticky lg:top-28">
         <div className="flex items-center gap-3 mb-6">
@@ -139,10 +139,10 @@ function DesktopStickyScroll() {
           <span className="text-xs text-slate-400">{activeIndex + 1} of {desktopScreens.length}</span>
         </div>
 
-        <h3 key={`h-${activeIndex}`} className="text-xl font-bold text-slate-900 leading-tight mb-3 annotation-enter">
+        <h3 key={`h-${activeIndex}`} className="text-2xl font-bold text-slate-900 leading-tight mb-3 annotation-enter">
           {annotation.heading}
         </h3>
-        <p key={`p-${activeIndex}`} className="text-sm text-slate-500 leading-relaxed annotation-enter">
+        <p key={`p-${activeIndex}`} className="text-base text-slate-500 leading-relaxed annotation-enter">
           {annotation.body}
         </p>
 

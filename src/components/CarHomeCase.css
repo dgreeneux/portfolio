@@ -138,17 +138,21 @@
   margin: 0 auto 7px;
 }
 
-/* Screen viewport — clips the screenshot to a 16:10 window */
+/* Screen viewport — scrollable, 16:10 window */
 .macbook-screen-area {
   background: #000;
   border-radius: 3px;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
   aspect-ratio: 16 / 10;
   position: relative;
+  scrollbar-width: none;
 }
+.macbook-screen-area::-webkit-scrollbar { display: none; }
 .macbook-screen-area img,
 .macbook-screen-area > div {
   width: 100%;
+  height: auto;
   display: block;
 }
 
