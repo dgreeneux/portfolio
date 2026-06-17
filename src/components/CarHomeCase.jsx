@@ -168,12 +168,23 @@ function DesktopStickyScroll() {
             key={screen.id}
             ref={el => { screenRefs.current[i].current = el }}
           >
-            <ScreenImage
-              src={screen.src}
-              alt={screen.alt}
-              className="w-full rounded-2xl desktop-screen-shadow"
-              placeholderStyle={{ height: 340, background: 'linear-gradient(160deg, #f8fafc 0%, #f1f5f9 100%)' }}
-            />
+            <div className="macbook-outer">
+              <div className="macbook-lid">
+                <div className="macbook-camera-dot" />
+                <div className="macbook-screen-area">
+                  <ScreenImage
+                    src={screen.src}
+                    alt={screen.alt}
+                    className="w-full block"
+                    placeholderStyle={{ aspectRatio: '16/10', background: 'linear-gradient(160deg, #f8fafc 0%, #f1f5f9 100%)' }}
+                  />
+                </div>
+              </div>
+              <div className="macbook-hinge" />
+              <div className="macbook-base">
+                <div className="macbook-trackpad" />
+              </div>
+            </div>
           </div>
         ))}
       </div>
@@ -226,31 +237,31 @@ export default function CarHomeCase() {
         </div>
       </header>
 
-      {/* Section A — Mobile */}
-      <section className="py-24 bg-slate-50">
-        <div className="max-w-5xl mx-auto px-8">
-          <div className="mb-14">
-            <p className="text-xs font-semibold text-blue-500 tracking-widest uppercase mb-3">Section A</p>
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">01. Frictionless Onboarding</h2>
-            <p className="text-lg text-slate-500" style={{ maxWidth: 520 }}>
-              Identity questions paired with smart API lookups. Hover the pulsing blue nodes to explore the key UX decisions behind each screen.
-            </p>
-          </div>
-          <MobileCarousel />
-        </div>
-      </section>
-
-      {/* Section B — Desktop */}
+      {/* Section A — Desktop */}
       <section className="py-24 bg-white">
         <div className="max-w-5xl mx-auto px-8">
           <div className="mb-16">
-            <p className="text-xs font-semibold text-blue-500 tracking-widest uppercase mb-3">Section B</p>
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">02. Empowering the User</h2>
+            <p className="text-xs font-semibold text-blue-500 tracking-widest uppercase mb-3">Section A</p>
+            <h2 className="text-4xl font-bold text-slate-900 mb-4">01. Empowering the User</h2>
             <p className="text-lg text-slate-500" style={{ maxWidth: 520 }}>
               Dynamic quote adjustments on desktop. Scroll through the screens — the panel on the left updates to explain each step as it comes into view.
             </p>
           </div>
           <DesktopStickyScroll />
+        </div>
+      </section>
+
+      {/* Section B — Mobile */}
+      <section className="py-24 bg-slate-50">
+        <div className="max-w-5xl mx-auto px-8">
+          <div className="mb-14">
+            <p className="text-xs font-semibold text-blue-500 tracking-widest uppercase mb-3">Section B</p>
+            <h2 className="text-4xl font-bold text-slate-900 mb-4">02. Frictionless Onboarding</h2>
+            <p className="text-lg text-slate-500" style={{ maxWidth: 520 }}>
+              Identity questions paired with smart API lookups. Hover the pulsing blue nodes to explore the key UX decisions behind each screen.
+            </p>
+          </div>
+          <MobileCarousel />
         </div>
       </section>
 

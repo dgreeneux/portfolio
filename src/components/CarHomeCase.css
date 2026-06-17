@@ -111,3 +111,69 @@
   scrollbar-width: none;
 }
 .scrollbar-hide::-webkit-scrollbar { display: none; }
+
+/* ── MacBook mockup ──────────────────────────────────────────────────────── */
+.macbook-outer {
+  position: relative;
+  width: 100%;
+  filter:
+    drop-shadow(0 24px 64px rgba(0, 0, 0, 0.18))
+    drop-shadow(0 4px 12px rgba(0, 0, 0, 0.10));
+}
+
+/* Screen lid */
+.macbook-lid {
+  background: #1c1c1e;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 10px 0;
+  box-shadow: inset 0 0 0 1.5px #2c2c2e;
+}
+
+/* Camera dot */
+.macbook-camera-dot {
+  width: 5px;
+  height: 5px;
+  background: #3a3a3c;
+  border-radius: 50%;
+  margin: 0 auto 7px;
+}
+
+/* Screen viewport — clips the screenshot to a 16:10 window */
+.macbook-screen-area {
+  background: #000;
+  border-radius: 3px;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  position: relative;
+}
+.macbook-screen-area img,
+.macbook-screen-area > div {
+  width: 100%;
+  display: block;
+}
+
+/* Hinge strip between lid and base */
+.macbook-hinge {
+  height: 4px;
+  background: linear-gradient(180deg, #9a9a9a 0%, #c8c8c8 100%);
+}
+
+/* Keyboard body */
+.macbook-base {
+  background: linear-gradient(180deg, #c8c8c8 0%, #b2b2b2 100%);
+  height: 24px;
+  border-radius: 0 0 6px 6px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 4px;
+  box-shadow: 0 3px 0 #999, 0 6px 20px rgba(0, 0, 0, 0.14);
+}
+
+/* Trackpad hint */
+.macbook-trackpad {
+  width: 26%;
+  height: 9px;
+  background: rgba(0, 0, 0, 0.11);
+  border-radius: 2px;
+}
