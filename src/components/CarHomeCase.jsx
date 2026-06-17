@@ -130,7 +130,7 @@ function DesktopStickyScroll() {
   }
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+    <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-10 items-start">
       {/* Left — sticky annotation */}
       <div className="lg:sticky lg:top-28">
         <div className="flex items-center gap-3 mb-6">
@@ -139,10 +139,10 @@ function DesktopStickyScroll() {
           <span className="text-xs text-slate-400">{activeIndex + 1} of {desktopScreens.length}</span>
         </div>
 
-        <h3 key={`h-${activeIndex}`} className="text-3xl font-bold text-slate-900 leading-tight mb-4 annotation-enter">
+        <h3 key={`h-${activeIndex}`} className="text-xl font-bold text-slate-900 leading-tight mb-3 annotation-enter">
           {annotation.heading}
         </h3>
-        <p key={`p-${activeIndex}`} className="text-lg text-slate-500 leading-relaxed annotation-enter">
+        <p key={`p-${activeIndex}`} className="text-sm text-slate-500 leading-relaxed annotation-enter">
           {annotation.body}
         </p>
 
@@ -162,7 +162,7 @@ function DesktopStickyScroll() {
       </div>
 
       {/* Right — scrolling screens */}
-      <div className="space-y-20">
+      <div className="space-y-16">
         {desktopScreens.map((screen, i) => (
           <div
             key={screen.id}
@@ -239,7 +239,7 @@ export default function CarHomeCase() {
 
       {/* Section A — Desktop */}
       <section className="py-24 bg-white">
-        <div className="max-w-5xl mx-auto px-8">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="mb-16">
             <p className="text-xs font-semibold text-blue-500 tracking-widest uppercase mb-3">Section A</p>
             <h2 className="text-4xl font-bold text-slate-900 mb-4">01. Empowering the User</h2>
