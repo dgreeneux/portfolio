@@ -69,11 +69,6 @@ function MobileCarousel() {
           <div key={screen.id} className="snap-center flex-shrink-0 flex flex-col items-center">
             {/* Phone mockup */}
             <div className="phone-outer">
-              {/* Side buttons */}
-              <div className="phone-btn phone-btn-mute" />
-              <div className="phone-btn phone-btn-vol-up" />
-              <div className="phone-btn phone-btn-vol-down" />
-              <div className="phone-btn-power" />
               {/* Scrollable screen */}
               <div className="phone-screen">
                 <div className="relative">
