@@ -11,8 +11,8 @@ function Hotspot({ hotspot }) {
 
   return (
     <button
-      className="absolute z-10 focus:outline-none appearance-none bg-transparent border-0 group"
-      style={{ left: hotspot.x, top: hotspot.y, transform: 'translate(-50%, -50%)', pointerEvents: 'auto' }}
+      className="absolute z-10 focus:outline-none outline-none appearance-none bg-transparent border-0 p-0 group"
+      style={{ left: hotspot.x, top: hotspot.y, transform: 'translate(-50%, -50%)', pointerEvents: 'auto', WebkitTapHighlightColor: 'transparent' }}
       onPointerEnter={(e) => { if (e.pointerType === 'mouse') setOpen(true) }}
       onPointerLeave={(e) => { if (e.pointerType === 'mouse') setOpen(false) }}
       onClick={() => setOpen(o => !o)}
