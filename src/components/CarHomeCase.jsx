@@ -163,19 +163,24 @@ function DesktopStickyScroll() {
             ref={el => { screenRefs.current[i].current = el }}
           >
             <div className="macbook-outer">
+              {/* Aluminum lid shell */}
               <div className="macbook-lid">
-                <div className="macbook-camera-dot" />
-                <div className="macbook-screen-area">
-                  <ScreenImage
-                    src={screen.src}
-                    alt={screen.alt}
-                    className="w-full block"
-                    placeholderStyle={{ aspectRatio: '16/10', background: 'linear-gradient(160deg, #f8fafc 0%, #f1f5f9 100%)' }}
-                  />
+                {/* Recessed black bezel */}
+                <div className="macbook-bezel">
+                  <div className="macbook-camera-dot" />
+                  <div className="macbook-screen-area">
+                    <ScreenImage
+                      src={screen.src}
+                      alt={screen.alt}
+                      className="w-full block"
+                      placeholderStyle={{ aspectRatio: '16/10', background: 'linear-gradient(160deg, #f8fafc 0%, #f1f5f9 100%)' }}
+                    />
+                  </div>
                 </div>
               </div>
               <div className="macbook-hinge" />
               <div className="macbook-base">
+                <div className="macbook-keyboard-area" />
                 <div className="macbook-trackpad" />
               </div>
             </div>
