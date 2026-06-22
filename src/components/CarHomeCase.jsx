@@ -92,6 +92,10 @@ function MobileCarousel() {
                     ))}
                 </div>
               </div>
+              {/* Dynamic Island — overlays screen, doesn't scroll */}
+              <div className="phone-camera-overlay">
+                <div className="phone-dynamic-island" />
+              </div>
             </div>
 
             <p className="mt-4 text-xs font-semibold text-slate-400 tracking-widest uppercase">
