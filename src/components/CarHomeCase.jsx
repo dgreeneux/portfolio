@@ -19,7 +19,7 @@ function Hotspot({ hotspot }) {
       aria-label={hotspot.label}
     >
       <span className="hotspot-pulse" aria-hidden="true" />
-      <span className="relative z-10 flex items-center justify-center w-7 h-7 rounded-full bg-blue-500" />
+      <span className="relative z-10 flex items-center justify-center w-5 h-5 rounded-full bg-blue-500" />
 
       {open && (
         <div
