@@ -66,7 +66,7 @@ function MobileCarousel() {
       <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-20 z-10 carousel-fade-left" />
       <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-20 z-10 carousel-fade-right" />
 
-      <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-8 px-10 scrollbar-hide">
+      <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory pt-6 pb-8 px-10 scrollbar-hide">
         {mobileScreens.map((screen, i) => (
           <div key={screen.id} className="snap-center flex-shrink-0 flex flex-col items-center">
             {/* Phone mockup */}
