@@ -13,8 +13,8 @@ function Hotspot({ hotspot }) {
     <button
       className="absolute z-10 focus:outline-none group"
       style={{ left: hotspot.x, top: hotspot.y, transform: 'translate(-50%, -50%)', pointerEvents: 'auto' }}
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
+      onPointerEnter={(e) => { if (e.pointerType === 'mouse') setOpen(true) }}
+      onPointerLeave={(e) => { if (e.pointerType === 'mouse') setOpen(false) }}
       onClick={() => setOpen(o => !o)}
       aria-label={hotspot.label}
     >
