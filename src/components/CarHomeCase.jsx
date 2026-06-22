@@ -71,8 +71,6 @@ function MobileCarousel() {
           <div key={screen.id} className="snap-center flex-shrink-0 flex flex-col items-center">
             {/* Phone mockup */}
             <div className="phone-outer">
-              {/* Dynamic Island */}
-              <div className="phone-notch" />
               {/* Side buttons */}
               <div className="phone-btn phone-btn-mute" />
               <div className="phone-btn phone-btn-vol-up" />
