@@ -210,7 +210,7 @@ export default function CarHomeCase() {
       </div>
 
       {/* Hero */}
-      <header className="py-10 border-b border-slate-100">
+      <header className="pt-10 pb-6 border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4">
           <p className="text-xs font-semibold text-blue-500 tracking-widest uppercase mb-4">Case Study</p>
 
@@ -229,9 +229,9 @@ export default function CarHomeCase() {
       </header>
 
       {/* Section A — Desktop */}
-      <section className="py-12 bg-white">
+      <section className="pt-8 pb-12 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="mb-10">
+          <div className="mb-16">
             <p className="text-lg text-slate-500 leading-relaxed">
               During this project I successfully transitioned into a UX lead role, serving as a key pillar in the core leadership team. My primary goals were to protect project scope by effectively managing stakeholders to eliminate disruptive last-minute changes and to unblock engineering by quickly turning ambiguous requirements into implementation-ready designs. I achieved this by proactively anticipating architectural challenges and opportunities to reuse design patterns. Working closely with the BA and development teams to ensure stories were signed off and implemented punctually, I helped sustain our extremely ambitious delivery timeline.
             </p>
