@@ -11,10 +11,10 @@ import desk5 from '../assets/Desk_5.png'
 // ─── Mobile screens ───────────────────────────────────────────────────────────
 
 export const mobileScreens = [
-  { id: 'mob-1', src: mob1, alt: 'Step 1 – Car and drivers: enter registration plate', label: 'Enter reg' },
-  { id: 'mob-2', src: mob2, alt: 'Step 2 – About you: personal details', label: 'About you' },
-  { id: 'mob-3', src: mob3, alt: 'Step 3 – Driving history', label: 'Driving history' },
-  { id: 'mob-4', src: mob4, alt: 'Step 4 – Your car details (auto-populated)', label: 'Car details' },
+  { id: 'mob-1', src: mob1, alt: 'About you — personal details', label: 'About you' },
+  { id: 'mob-2', src: mob2, alt: 'Driving history', label: 'Driving history' },
+  { id: 'mob-3', src: mob3, alt: 'Enter reg — car and drivers', label: 'Enter reg' },
+  { id: 'mob-4', src: mob4, alt: 'Car details — auto-populated', label: 'Car details' },
 ]
 
 // ─── Mobile hotspot annotations ───────────────────────────────────────────────
@@ -23,23 +23,23 @@ export const mobileHotspots = [
   {
     screenIndex: 0,
     x: '50%',
-    y: '52%',
-    label: 'One field, one tap',
-    tooltip: 'A single reg input via DVLA API replaces 10+ manual vehicle fields — the biggest single drop-off reduction in the flow. A "Don\'t know the registration?" escape handles edge cases without cluttering the primary path.',
-  },
-  {
-    screenIndex: 1,
-    x: '50%',
     y: '42%',
     label: 'Interaction design over form design',
     tooltip: 'Stacked button groups for employment status cut taps on mobile. Occupation and industry use live-search autocomplete — type a partial match, not scroll a long list. Perceived form length drops significantly without removing a single question.',
   },
   {
-    screenIndex: 2,
+    screenIndex: 1,
     x: '50%',
     y: '36%',
     label: 'Personalized and pre-contextualized',
     tooltip: 'Every question is anchored to the policyholder by name. A summary format at the bottom — "Dave Greene has been a UK resident for 3+ years" — lets users confirm the output rather than re-read every answer. Drivers with a clean licence skip endorsement and claims questions entirely.',
+  },
+  {
+    screenIndex: 2,
+    x: '50%',
+    y: '52%',
+    label: 'One field, one tap',
+    tooltip: 'A single reg input via DVLA API replaces 10+ manual vehicle fields — the biggest single drop-off reduction in the flow. A "Don\'t know the registration?" escape handles edge cases without cluttering the primary path.',
   },
   {
     screenIndex: 3,
