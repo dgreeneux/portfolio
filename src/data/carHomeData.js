@@ -29,8 +29,8 @@ export const mobileHotspots = [
   },
   {
     screenIndex: 1,
-    x: '38%',
-    y: '10%',
+    x: '65%',
+    y: '77%',
     label: 'Personalized and pre-contextualized',
     tooltip: 'Every question is anchored to the policyholder by name. A summary format at the bottom — "Dave Greene has been a UK resident for 3+ years" — lets users confirm the output rather than re-read every answer. Drivers with a clean licence skip endorsement and claims questions entirely.',
   },
