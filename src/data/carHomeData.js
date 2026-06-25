@@ -22,8 +22,8 @@ export const mobileScreens = [
 export const mobileHotspots = [
   {
     screenIndex: 0,
-    x: '68%',
-    y: '37%',
+    x: '82%',
+    y: '33%',
     label: 'Interaction design over form design',
     tooltip: 'Stacked button groups for employment status cut taps on mobile. Occupation and industry use live-search autocomplete — type a partial match, not scroll a long list. Perceived form length drops significantly without removing a single question.',
   },
