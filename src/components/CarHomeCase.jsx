@@ -16,9 +16,18 @@ function Hotspot({ hotspot }) {
   function computePos() {
     if (!btnRef.current) return
     const r = btnRef.current.getBoundingClientRect()
+    const vw = document.documentElement.clientWidth
+    const vh = document.documentElement.clientHeight
     const tipW = 176
-    const left = Math.min(Math.max(r.left + r.width / 2 - tipW / 2, 8), window.innerWidth - tipW - 8)
-    setTipPos({ top: r.bottom + 8, left })
+    const tipH = 120 // conservative estimate so we can pre-flip
+    const gap = 8
+
+    const left = Math.min(Math.max(r.left + r.width / 2 - tipW / 2, gap), vw - tipW - gap)
+    const top = r.bottom + gap + tipH > vh
+      ? r.top - tipH - gap   // flip above when not enough room below
+      : r.bottom + gap
+
+    setTipPos({ top, left })
   }
 
   function scheduleClose() {
