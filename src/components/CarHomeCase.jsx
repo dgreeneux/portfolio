@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import { createPortal } from 'react-dom'
 import { Link } from 'react-router-dom'
 import { mobileScreens, mobileHotspots, desktopScreens, desktopAnnotations } from '../data/carHomeData'
 import '../tailwind.css'
@@ -8,30 +9,62 @@ import './CarHomeCase.css'
 
 function Hotspot({ hotspot }) {
   const [open, setOpen] = useState(false)
+  const [tipPos, setTipPos] = useState(null)
+  const btnRef = useRef(null)
+  const closeTimer = useRef(null)
+
+  function computePos() {
+    if (!btnRef.current) return
+    const r = btnRef.current.getBoundingClientRect()
+    const tipW = 176
+    const left = Math.min(Math.max(r.left + r.width / 2 - tipW / 2, 8), window.innerWidth - tipW - 8)
+    setTipPos({ top: r.bottom + 8, left })
+  }
+
+  function scheduleClose() {
+    closeTimer.current = setTimeout(() => setOpen(false), 120)
+  }
+  function cancelClose() {
+    clearTimeout(closeTimer.current)
+  }
+
+  // Reposition on scroll so the tooltip tracks the button when the phone screen scrolls
+  useEffect(() => {
+    if (!open) return
+    const onScroll = () => { computePos() }
+    window.addEventListener('scroll', onScroll, true)
+    return () => window.removeEventListener('scroll', onScroll, true)
+  }, [open])
 
   return (
-    <button
-      className="absolute z-10 focus:outline-none outline-none appearance-none bg-transparent border-0 p-0 group"
-      style={{ left: hotspot.x, top: hotspot.y, transform: 'translate(-50%, -50%)', pointerEvents: 'auto', WebkitTapHighlightColor: 'transparent' }}
-      onPointerEnter={(e) => { if (e.pointerType === 'mouse') setOpen(true) }}
-      onPointerLeave={(e) => { if (e.pointerType === 'mouse') setOpen(false) }}
-      onClick={() => setOpen(o => !o)}
-      aria-label={hotspot.label}
-    >
-      <span className="hotspot-pulse" aria-hidden="true" />
-      <span className="relative z-10 flex items-center justify-center w-5 h-5 rounded-full bg-blue-500" />
+    <>
+      <button
+        ref={btnRef}
+        className="absolute z-10 focus:outline-none outline-none appearance-none bg-transparent border-0 p-0 group"
+        style={{ left: hotspot.x, top: hotspot.y, transform: 'translate(-50%, -50%)', pointerEvents: 'auto', WebkitTapHighlightColor: 'transparent' }}
+        onPointerEnter={(e) => { if (e.pointerType !== 'mouse') return; cancelClose(); computePos(); setOpen(true) }}
+        onPointerLeave={(e) => { if (e.pointerType !== 'mouse') return; scheduleClose() }}
+        onClick={() => { computePos(); setOpen(o => !o) }}
+        aria-label={hotspot.label}
+      >
+        <span className="hotspot-pulse" aria-hidden="true" />
+        <span className="relative z-10 flex items-center justify-center w-5 h-5 rounded-full bg-blue-500" />
+      </button>
 
-      {open && (
+      {open && tipPos && createPortal(
         <div
-          className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-52 text-left rounded-xl bg-gray-900 px-3 py-2.5 shadow-2xl"
+          className="w-44 text-left rounded-xl bg-gray-900 px-3 py-2.5 shadow-2xl"
+          style={{ position: 'fixed', top: tipPos.top, left: tipPos.left, zIndex: 9999 }}
           role="tooltip"
+          onPointerEnter={cancelClose}
+          onPointerLeave={scheduleClose}
         >
           <p className="text-xs font-semibold text-blue-300 mb-1">{hotspot.label}</p>
           <p className="text-xs text-gray-300 leading-relaxed">{hotspot.tooltip}</p>
-          <span className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-gray-900" />
-        </div>
+        </div>,
+        document.body
       )}
-    </button>
+    </>
   )
 }
 
@@ -69,7 +102,7 @@ function MobileCarousel() {
           <div key={screen.id} className="snap-center flex-shrink-0 flex flex-col items-center">
             {/* Phone mockup */}
             <div className="phone-outer">
-              {/* Scrollable screen */}
+              {/* Scrollable screen — hotspots inside so they anchor to image content */}
               <div className="phone-screen">
                 <div className="relative">
                   <ScreenImage
@@ -78,15 +111,12 @@ function MobileCarousel() {
                     className="w-full block"
                     placeholderStyle={{ height: 520, background: 'linear-gradient(160deg, #eff6ff 0%, #dbeafe 100%)' }}
                   />
+                  {mobileHotspots
+                    .filter(h => h.screenIndex === i)
+                    .map((hotspot, hi) => (
+                      <Hotspot key={hi} hotspot={hotspot} />
+                    ))}
                 </div>
-              </div>
-              {/* Hotspot overlay — outside scroll container so tooltips aren't clipped */}
-              <div className="phone-hotspot-overlay">
-                {mobileHotspots
-                  .filter(h => h.screenIndex === i)
-                  .map((hotspot, hi) => (
-                    <Hotspot key={hi} hotspot={hotspot} />
-                  ))}
               </div>
             </div>
 
