@@ -319,9 +319,9 @@ export default function CarHomeCase() {
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4">
           <div className="mb-8">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">02. Frictionless Onboarding</h2>
+            <h2 className="text-4xl font-bold text-slate-900 mb-4">02. Mobile Journey</h2>
             <p className="text-lg text-slate-500">
-              Identity questions paired with smart API lookups. Hover the pulsing blue nodes to explore the key UX decisions behind each screen.
+              With the majority of new business generated online, mobile wasn't a scaled-down desktop experience. Every screen had to work at thumb-reach, in a single session, without a safety net. Hover the pulsing blue nodes to explore the key friction points we solved.
             </p>
           </div>
           <MobileCarousel />
