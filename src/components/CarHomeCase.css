@@ -130,12 +130,6 @@
   z-index: 15;
 }
 
-/* ── Reduced motion ─────────────────────────────────────────────────────── */
-@media (prefers-reduced-motion: reduce) {
-  .hotspot-pulse    { animation: none; }
-  .annotation-enter { animation: none; }
-}
-
 /* ── Hide scrollbar ──────────────────────────────────────────────────────── */
 .scrollbar-hide {
   -ms-overflow-style: none;
