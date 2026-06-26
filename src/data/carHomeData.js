@@ -43,7 +43,7 @@ export const mobileHotspots = [
   },
   {
     screenIndex: 3,
-    x: '55%',
+    x: '70%',
     y: '11%',
     label: 'Confirm, don\'t retype',
     tooltip: 'Make, model, engine, year, and transmission are pulled from the reg lookup and shown in a confirmation card with a "Search again" edit option. Users verify, not enter — then the screen builds progressively: mileage, overnight storage, and safety features.',
