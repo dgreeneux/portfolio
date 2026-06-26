@@ -137,7 +137,7 @@ function MobileCarousel() {
             </div>
 
             <p className="mt-4 text-xs font-semibold text-slate-500 tracking-widest uppercase">
-              {String(i + 1).padStart(2, '0')} — {screen.label}
+              {String(i + 1).padStart(2, '0')}. {screen.label}
             </p>
           </div>
         ))}
@@ -281,7 +281,7 @@ export default function CarHomeCase() {
             <div className="mb-10">
               <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">The challenge</p>
               <p className="text-lg text-slate-900 leading-relaxed font-medium">
-                The carrier needs to extend its personal lines business within the UK through a scalable partnerships model, launching the first two partners while building a repeatable foundation for future partner onboarding. The challenge was to implement backend systems and frontend digital platform capabilities in a way that reduces the time, effort, and cost of each new partner launch — while enabling the carrier's business and IT teams to become increasingly self-sufficient.
+                The carrier needs to extend its personal lines business within the UK through a scalable partnerships model, launching the first two partners while building a repeatable foundation for future partner onboarding. The challenge was to implement backend systems and frontend digital platform capabilities in a way that reduces the time, effort, and cost of each new partner launch, while enabling the carrier's business and IT teams to become increasingly self-sufficient.
               </p>
             </div>
             <div className="grid grid-cols-3 gap-6 py-8 border-t border-b border-slate-100 mb-10">
@@ -304,7 +304,7 @@ export default function CarHomeCase() {
             <div className="border-l-2 border-blue-200 pl-6">
               <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Design approach</p>
               <p className="text-lg text-slate-500 leading-relaxed">
-                The flow itself was largely inherited from the carrier's existing product — a deliberate call given the six-month delivery window. The real design challenge was adapting it to a responsive platform while building a white-label architecture future partners could adopt without custom work. I advised constraining partner theming to brand colour, system feedback colours, typography, and illustration retheming — and resisted granular component-level customisation. Leaving that door open would mean bespoke work for every new partner launch, directly undermining the scalability model.
+                The flow itself was largely inherited from the carrier's existing product, a deliberate call given the six-month delivery window. The real design challenge was adapting it to a responsive platform while building a white-label architecture future partners could adopt without custom work. I advised constraining partner theming to brand colour, system feedback colours, typography, and illustration retheming, and resisted granular component-level customisation. Leaving that door open would mean bespoke work for every new partner launch, directly undermining the scalability model.
               </p>
             </div>
           </div>

@@ -25,28 +25,28 @@ export const mobileHotspots = [
     x: '82%',
     y: '33%',
     label: 'Interaction design over form design',
-    tooltip: 'Stacked button groups for employment status cut taps on mobile. Occupation and industry use live-search autocomplete — type a partial match, not scroll a long list. Perceived form length drops significantly without removing a single question.',
+    tooltip: 'Stacked button groups for employment status cut taps on mobile. Occupation and industry use live-search autocomplete: type a partial match, not scroll a long list. Perceived form length drops significantly without removing a single question.',
   },
   {
     screenIndex: 1,
     x: '65%',
     y: '77%',
     label: 'Personalized and pre-contextualized',
-    tooltip: 'Every question is anchored to the policyholder by name. A summary format at the bottom — "Dave Greene has been a UK resident for 3+ years" — lets users confirm the output rather than re-read every answer. Drivers with a clean licence skip endorsement and claims questions entirely.',
+    tooltip: 'Every question is anchored to the policyholder by name. A summary format at the bottom, "Dave Greene has been a UK resident for 3+ years", lets users confirm the output rather than re-read every answer. Drivers with a clean licence skip endorsement and claims questions entirely.',
   },
   {
     screenIndex: 2,
     x: '50%',
     y: '46%',
     label: 'One field, one tap',
-    tooltip: 'A single reg input via DVLA API replaces 10+ manual vehicle fields — the biggest single drop-off reduction in the flow. A "Don\'t know the registration?" escape handles edge cases without cluttering the primary path.',
+    tooltip: 'A single reg input via DVLA API replaces 10+ manual vehicle fields, the biggest single drop-off reduction in the flow. A "Don\'t know the registration?" escape handles edge cases without cluttering the primary path.',
   },
   {
     screenIndex: 3,
     x: '86%',
     y: '11%',
     label: 'Confirm, don\'t retype',
-    tooltip: 'Make, model, engine, year, and transmission are pulled from the reg lookup and shown in a confirmation card with a "Search again" edit option. Users verify, not enter — then the screen builds progressively: mileage, overnight storage, and safety features.',
+    tooltip: 'Make, model, engine, year, and transmission are pulled from the reg lookup and shown in a confirmation card with a "Search again" edit option. Users verify, not enter. The screen then builds progressively: mileage, overnight storage, and safety features.',
   },
 ]
 
@@ -66,26 +66,26 @@ export const desktopAnnotations = [
   {
     step: '01',
     heading: 'Structured capture, guided by context',
-    body: 'Button groups over dropdowns for employment and home ownership — faster to answer, fewer taps. Occupation uses live-search autocomplete with a contextual help link for edge cases. A calendar date picker replaces free-text date entry — users were failing validation by entering two-digit years, a recurring support issue on the previous flow. The compliance declaration surfaces inline so users never leave the flow.',
+    body: 'Button groups over dropdowns for employment and home ownership: faster to answer, fewer taps. Occupation uses live-search autocomplete with a contextual help link for edge cases. A calendar date picker replaces free-text date entry. Users were failing validation by entering two-digit years, a recurring support issue on the previous flow. The compliance declaration surfaces inline so users never leave the flow.',
   },
   {
     step: '02',
     heading: 'Property detail without the form fatigue',
-    body: 'Address pre-fills in an editable card — no re-entry. Cover type and property type use visual button grids rather than dropdowns. Compliance statements surface as closeable inline accordions, handling regulatory requirements without a separate T&Cs screen.',
+    body: 'Address pre-fills in an editable card with no re-entry. Cover type and property type use visual button grids rather than dropdowns. Compliance statements surface as closeable inline accordions, handling regulatory requirements without a separate T&Cs screen.',
   },
   {
     step: '03',
     heading: 'Comparison that guides without forcing',
-    body: 'Three named tiers with a feature matrix frame the decision without overwhelming. The excess slider links directly to the quoted premium — users trade upfront cost against claim protection in real time. A sticky price component follows the user as they scroll, keeping the quoted premium visible throughout without cluttering the comparison interface — satisfying FCA price visibility requirements while maintaining clarity. Excess categories are broken out individually so there are no surprises at claim time.',
+    body: 'Three named tiers with a feature matrix frame the decision without overwhelming. The excess slider links directly to the quoted premium, so users trade upfront cost against claim protection in real time. A sticky price component follows the user as they scroll, keeping the quoted premium visible throughout without cluttering the comparison interface, satisfying FCA price visibility requirements while maintaining clarity. Excess categories are broken out individually so there are no surprises at claim time.',
   },
   {
     step: '04',
     heading: 'Payment flexibility, built into the quote',
-    body: 'One Annual/Monthly toggle recalculates all three tiers simultaneously — no page reload. Add-ons surface inline with value bullets, making the upsell part of the decision rather than a post-purchase surprise. The running total updates visibly with every choice.',
+    body: 'One Annual/Monthly toggle recalculates all three tiers simultaneously with no page reload. Add-ons surface inline with value bullets, making the upsell part of the decision rather than a post-purchase surprise. The running total updates visibly with every choice.',
   },
   {
     step: '05',
     heading: 'A summary screen that earns confidence',
-    body: 'Every section of cover is expandable inline — no separate review pages. All four policy documents surface pre-purchase, satisfying FCA pre-sale requirements. Auto-renewal opt-out is given equal prominence to the default, and the declaration uses plain English rather than a standard T&Cs checkbox.',
+    body: 'Every section of cover is expandable inline with no separate review pages. All four policy documents surface pre-purchase, satisfying FCA pre-sale requirements. Auto-renewal opt-out is given equal prominence to the default, and the declaration uses plain English rather than a standard T&Cs checkbox.',
   },
 ]
