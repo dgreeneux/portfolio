@@ -66,7 +66,7 @@ export const desktopAnnotations = [
   {
     step: '01',
     heading: 'Structured capture, guided by context',
-    body: 'Button groups over dropdowns for employment and home ownership — faster to answer, fewer taps. Occupation uses live-search autocomplete with a contextual help link for edge cases. The compliance declaration surfaces inline so users never leave the flow.',
+    body: 'Button groups over dropdowns for employment and home ownership — faster to answer, fewer taps. Occupation uses live-search autocomplete with a contextual help link for edge cases. A calendar date picker replaces free-text date entry — users were failing validation by entering two-digit years, a recurring support issue on the previous flow. The compliance declaration surfaces inline so users never leave the flow.',
   },
   {
     step: '02',
@@ -76,7 +76,7 @@ export const desktopAnnotations = [
   {
     step: '03',
     heading: 'Comparison that guides without forcing',
-    body: 'Three named tiers with a feature matrix frame the decision without overwhelming. The excess slider links directly to the quoted premium — users trade upfront cost against claim protection in real time. Excess categories are broken out individually so there are no surprises at claim time.',
+    body: 'Three named tiers with a feature matrix frame the decision without overwhelming. The excess slider links directly to the quoted premium — users trade upfront cost against claim protection in real time. A sticky price component follows the user as they scroll, keeping the quoted premium visible throughout without cluttering the comparison interface — satisfying FCA price visibility requirements while maintaining clarity. Excess categories are broken out individually so there are no surprises at claim time.',
   },
   {
     step: '04',
