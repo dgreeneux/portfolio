@@ -89,7 +89,7 @@ function Hotspot({ hotspot }) {
 function PlaceholderScreen({ label, className = '', style = {} }) {
   return (
     <div
-      className={`flex flex-col items-center justify-center gap-3 text-slate-400 ${className}`}
+      className={`flex flex-col items-center justify-center gap-3 text-slate-600 ${className}`}
       style={style}
     >
       <svg className="w-8 h-8 opacity-30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -136,7 +136,7 @@ function MobileCarousel() {
               </div>
             </div>
 
-            <p className="mt-4 text-xs font-semibold text-slate-400 tracking-widest uppercase">
+            <p className="mt-4 text-xs font-semibold text-slate-500 tracking-widest uppercase">
               {String(i + 1).padStart(2, '0')} — {screen.label}
             </p>
           </div>
@@ -174,9 +174,9 @@ function DesktopStickyScroll() {
       {/* Left — sticky annotation */}
       <div className="lg:sticky lg:top-28">
         <div className="flex items-center gap-3 mb-6">
-          <span className="text-blue-500 font-mono text-sm font-semibold">{annotation.step}</span>
+          <span className="text-blue-600 font-mono text-sm font-semibold">{annotation.step}</span>
           <div className="h-px flex-1 bg-slate-200" />
-          <span className="text-xs text-slate-400">{activeIndex + 1} of {desktopScreens.length}</span>
+          <span className="text-xs text-slate-500">{activeIndex + 1} of {desktopScreens.length}</span>
         </div>
 
         <h3 key={`h-${activeIndex}`} className="text-2xl font-bold text-slate-900 leading-tight mb-3 annotation-enter">
@@ -258,7 +258,7 @@ export default function CarHomeCase() {
       {/* Hero */}
       <header className="pt-10 pb-6 border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4">
-          <p className="text-xs font-semibold text-blue-500 tracking-widest uppercase mb-4">Case Study</p>
+          <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Case Study</p>
 
           <h1 className="text-5xl font-bold text-slate-900 leading-tight mb-4">
             Inception to go-live in six months
@@ -290,7 +290,7 @@ export default function CarHomeCase() {
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4">
           <div className="mb-8">
-            <p className="text-xs font-semibold text-blue-500 tracking-widest uppercase mb-3">Section B</p>
+            <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Section B</p>
             <h2 className="text-4xl font-bold text-slate-900 mb-4">02. Frictionless Onboarding</h2>
             <p className="text-lg text-slate-500" style={{ maxWidth: 520 }}>
               Identity questions paired with smart API lookups. Hover the pulsing blue nodes to explore the key UX decisions behind each screen.
