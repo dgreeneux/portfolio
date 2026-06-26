@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useLayoutEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import { Link } from 'react-router-dom'
 import { mobileScreens, mobileHotspots, desktopScreens, desktopAnnotations } from '../data/carHomeData'
@@ -11,24 +11,30 @@ function Hotspot({ hotspot }) {
   const [open, setOpen] = useState(false)
   const [tipPos, setTipPos] = useState(null)
   const btnRef = useRef(null)
+  const tipRef = useRef(null)
   const closeTimer = useRef(null)
 
   function computePos() {
     if (!btnRef.current) return
     const r = btnRef.current.getBoundingClientRect()
     const vw = document.documentElement.clientWidth
-    const vh = document.documentElement.clientHeight
     const tipW = 176
-    const tipH = 120 // conservative estimate so we can pre-flip
     const gap = 8
-
     const left = Math.min(Math.max(r.left + r.width / 2 - tipW / 2, gap), vw - tipW - gap)
-    const top = r.bottom + gap + tipH > vh
-      ? r.top - tipH - gap   // flip above when not enough room below
-      : r.bottom + gap
-
-    setTipPos({ top, left })
+    setTipPos({ top: r.bottom + gap, left })
   }
+
+  // After each position update, measure the actual rendered tooltip and flip
+  // above the button if it clips the bottom edge — runs before browser paint.
+  useLayoutEffect(() => {
+    if (!tipRef.current || !btnRef.current) return
+    const tip = tipRef.current.getBoundingClientRect()
+    const vh = document.documentElement.clientHeight
+    if (tip.bottom > vh - 8) {
+      const btn = btnRef.current.getBoundingClientRect()
+      tipRef.current.style.top = `${btn.top - tip.height - 8}px`
+    }
+  }, [tipPos])
 
   function scheduleClose() {
     closeTimer.current = setTimeout(() => setOpen(false), 120)
@@ -40,7 +46,7 @@ function Hotspot({ hotspot }) {
   // Reposition on scroll so the tooltip tracks the button when the phone screen scrolls
   useEffect(() => {
     if (!open) return
-    const onScroll = () => { computePos() }
+    const onScroll = () => computePos()
     window.addEventListener('scroll', onScroll, true)
     return () => window.removeEventListener('scroll', onScroll, true)
   }, [open])
@@ -62,6 +68,7 @@ function Hotspot({ hotspot }) {
 
       {open && tipPos && createPortal(
         <div
+          ref={tipRef}
           className="w-44 text-left rounded-xl bg-gray-900 px-3 py-2.5 shadow-2xl"
           style={{ position: 'fixed', top: tipPos.top, left: tipPos.left, zIndex: 9999 }}
           role="tooltip"
