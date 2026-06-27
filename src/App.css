@@ -81,19 +81,21 @@ a { color: inherit; }
 }
 
 /* ── Main ── */
-main {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 var(--spacing-page);
-}
+main {}
 
 /* ── Projects ── */
 .projects {
-  padding: clamp(2.5rem, 5vw, 4rem) 0;
+  padding: clamp(2.5rem, 5vw, 4rem) var(--spacing-page);
+  background: #f8fafc;
+}
+
+.projects-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .projects h2 {
-  font-size: 0.7rem;
+  font-size: 0.95rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;

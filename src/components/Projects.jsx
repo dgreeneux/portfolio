@@ -56,12 +56,14 @@ export default function Projects() {
   const [featured, ...rest] = projects
   return (
     <section id="projects" className="projects">
-      <h2>Selected Work</h2>
-      <FeaturedCard {...featured} />
-      <div className="projects-grid">
-        {rest.map(project => (
-          <ProjectCard key={project.id} {...project} />
-        ))}
+      <div className="projects-content">
+        <h2>Selected Work</h2>
+        <FeaturedCard {...featured} />
+        <div className="projects-grid">
+          {rest.map(project => (
+            <ProjectCard key={project.id} {...project} />
+          ))}
+        </div>
       </div>
     </section>
   )
