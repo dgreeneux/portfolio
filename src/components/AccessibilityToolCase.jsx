@@ -50,8 +50,8 @@ const steps = [
   },
   {
     step: '04',
-    heading: 'Generate EightShapes input',
-    body: 'The tool outputs a formatted colour list ready to paste directly into the EightShapes Contrast Grid for full cross-colour matrix analysis — no manual entry required.',
+    heading: 'Deliver plain-language recommendations',
+    body: 'For every colour, the tool explains not just whether it passes, but where it can and cannot safely be used — which backgrounds work, which fail, and why. Brand teams get actionable guidance without needing a designer in the room to interpret the results.',
   },
 ]
 
@@ -69,7 +69,7 @@ const insights = [
   {
     step: '03',
     heading: 'Output is immediately actionable',
-    body: 'The EightShapes grid input and plain-language recommendations mean brand teams can act on findings without UX involvement in every remediation — the tool transfers knowledge, not just results.',
+    body: 'Plain-language recommendations mean brand teams can act on findings without UX involvement in every remediation. The tool transfers knowledge, not just results — explaining what fails, why, and what to do about it.',
   },
 ]
 
@@ -120,7 +120,7 @@ export default function AccessibilityToolCase() {
 
             <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">The solution</p>
             <p className="text-lg text-slate-500 leading-relaxed">
-              A NotebookLM-powered tool that reads a customer design token JSON, extracts the key brand colour values, and automatically calculates WCAG 2.0 contrast ratios against white and black backgrounds. It flags every colour by compliance level — AAA, AA, AA18, or DNP — and generates a formatted EightShapes Contrast Grid input for deeper cross-colour analysis. An audit that previously required manual calculation now takes seconds.
+              A NotebookLM-powered tool that reads a customer design token JSON, extracts the key brand colour values, and automatically calculates WCAG 2.0 contrast ratios against white and black backgrounds. It flags every colour by compliance level — AAA, AA, AA18, or DNP — and delivers plain-language guidance on where each colour can and cannot safely be used. An audit that previously required manual calculation now takes seconds from a single JSON file.
             </p>
           </div>
 
