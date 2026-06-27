@@ -1,5 +1,6 @@
 import ProjectCard from './ProjectCard'
 import pickAndMixImg from '../assets/Pick and Mix.png'
+import carHomeThumb from '../assets/Desk_1.png'
 
 const projects = [
   {
@@ -8,7 +9,7 @@ const projects = [
     title: 'Car and home quote and buy flow',
     description: 'A self-serve digital journey enabling customers to get a quote and purchase car and home insurance products online.',
     tags: ['UX Design', 'Interaction Design', 'Insurance'],
-    thumbnail: null,
+    thumbnail: carHomeThumb,
   },
   {
     id: 2,
