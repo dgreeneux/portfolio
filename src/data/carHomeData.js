@@ -66,7 +66,7 @@ export const desktopAnnotations = [
   {
     step: '01',
     heading: 'Structured capture, guided by context',
-    body: 'Button groups over dropdowns for employment and home ownership: faster to answer, fewer taps. Occupation uses live-search autocomplete with a contextual help link for edge cases. A calendar date picker replaces free-text date entry. Users were failing validation by entering two-digit years, a recurring support issue on the previous flow. The compliance declaration surfaces inline so users never leave the flow.',
+    body: 'Button groups over dropdowns for employment and home ownership: faster to answer, fewer taps. Occupation uses live-search autocomplete with a contextual help link for edge cases. A calendar date picker replaces free-text date entry. Analysis of the carrier\'s existing flow identified two-digit year entry as a recurring validation failure and support issue. The compliance declaration surfaces inline so users never leave the flow.',
   },
   {
     step: '02',
@@ -81,7 +81,7 @@ export const desktopAnnotations = [
   {
     step: '04',
     heading: 'Payment flexibility, built into the quote',
-    body: 'One Annual/Monthly toggle recalculates all three tiers simultaneously with no page reload. Add-ons surface inline with value bullets, making the upsell part of the decision rather than a post-purchase surprise. The running total updates visibly with every choice.',
+    body: 'Analysis of the carrier\'s existing flow showed users frequently couldn\'t tell whether add-ons had been applied. Add-ons now surface with explicit selected and unselected states alongside value bullets, making the upsell part of the decision rather than a post-purchase surprise. One Annual/Monthly toggle recalculates all three tiers simultaneously with no page reload. The running total updates visibly with every choice.',
   },
   {
     step: '05',
