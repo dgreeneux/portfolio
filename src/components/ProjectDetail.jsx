@@ -4,6 +4,7 @@ import paymentImg from '../assets/Payment.png'
 import CarHomeCase from './CarHomeCase'
 import CommercialCase from './CommercialCase'
 import AccessibilityToolCase from './AccessibilityToolCase'
+import TempleStreetCase from './TempleStreetCase'
 
 const projects = {
   'commercial-underwriters': {
@@ -23,6 +24,7 @@ export default function ProjectDetail() {
   if (slug === 'car-home-quote-and-buy') return <CarHomeCase />
   if (slug === 'commercial-underwriters') return <CommercialCase />
   if (slug === 'accessibility-token-audit') return <AccessibilityToolCase />
+  if (slug === 'temple-street-eeg') return <TempleStreetCase />
 
   const project = projects[slug]
 
