@@ -3,6 +3,7 @@ import ProjectCard from './ProjectCard'
 import pickAndMixImg from '../assets/Pick and Mix.png'
 import carHomeThumb from '../assets/Desk_1.png'
 import templeStreetThumb from '../assets/Temple Street Bear.jpg'
+import accessibilityThumb from '../assets/Screenshot 2026-06-27 at 23.59.48.png'
 
 const projects = [
   {
@@ -35,7 +36,7 @@ const projects = [
     title: 'Accessibility audit tool for design tokens',
     description: 'A NotebookLM-powered tool that reads client JSON token files and automatically audits brand colours for WCAG 2.0 compliance across 25+ white-label brands.',
     tags: ['Design Tooling', 'Accessibility', 'WCAG', 'AI'],
-    thumbnail: null,
+    thumbnail: accessibilityThumb,
   },
 ]
 

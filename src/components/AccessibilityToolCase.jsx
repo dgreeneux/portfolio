@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import '../tailwind.css'
 import './CarHomeCase.css'
+import toolScreenshot from '../assets/Screenshot 2026-06-27 at 23.59.48.png'
 
 const contrastData = [
   { name: 'Brand 60',             hex: '#052049', vsWhite: 16.04, vsBlack: 1.31,  whiteLevel: 'AAA', blackLevel: 'DNP' },
@@ -122,6 +123,14 @@ export default function AccessibilityToolCase() {
             <p className="text-lg text-slate-500 leading-relaxed">
               A NotebookLM-powered tool that reads a client's design token JSON directly, knows which colour values to extract, and runs the full WCAG 2.0 audit automatically. Rather than entering values manually, I provide the JSON file and the tool produces the complete contrast report — AAA, AA, AA18, or DNP for each colour against white and black backgrounds — with plain-language guidance on where each colour can and cannot safely be used. An audit that previously required significant manual work now takes seconds from a single file. Built for my own workflow, with the intention of sharing and extending it once the core audit logic is solid.
             </p>
+          </div>
+
+          {/* Tool screenshot */}
+          <div className="mb-16">
+            <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">The tool</p>
+            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+              <img src={toolScreenshot} alt="NotebookLM contrast audit tool showing colour swatches, hex values, and WCAG compliance results" className="w-full block" />
+            </div>
           </div>
 
           {/* How it works */}
