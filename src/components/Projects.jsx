@@ -21,6 +21,7 @@ const projects = [
     description: 'Designing a pick-and-mix cover selection and payment experience for commercial insurance brokers.',
     tags: ['Professional Indemnity', 'White-label', 'B2B', 'London Market', 'Multi-broker'],
     thumbnail: pickAndMixImg,
+    imagePosition: 'left top',
   },
   {
     id: 3,
@@ -71,7 +72,7 @@ export default function Projects() {
         <FeaturedCard {...featured} />
         <div className="projects-grid">
           {rest.map(project => (
-            <ProjectCard key={project.id} {...project} />
+            <ProjectCard key={project.id} {...project} imagePosition={project.imagePosition} />
           ))}
         </div>
       </div>
