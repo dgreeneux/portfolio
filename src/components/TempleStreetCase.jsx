@@ -5,6 +5,12 @@ import bearHero from '../assets/Temple Street Bear.jpg'
 import bearSetup from '../assets/Temple Street Bear_6.jpg'
 import bearReception from '../assets/Temple Street Bear_11.jpg'
 import appointmentLetter from '../assets/NewAppointmentLetter.png'
+import guideNightBefore from '../assets/EEGGUIDE_NIGHT BEFORE 2.png'
+import guideMorning from '../assets/EEGGUIDE_EEG MORNING.png'
+import guideJourney from '../assets/EEGGUIDE_JOURNEY 2.png'
+import guideHome from '../assets/EEGGUIDE_HOME.png'
+import guideDrawing1 from '../assets/EEGGUIDE_DRAWING 1.png'
+import guideDrawing2 from '../assets/EEGGUIDE_DRAWING 2.png'
 
 const researchFindings = [
   {
@@ -73,6 +79,15 @@ const decisions = [
     heading: 'Maps over QR codes',
     body: 'An early prototype used QR codes to link to directions. Testing surfaced the problem: parents navigating to the hospital at 6am with a sleep-deprived child in the back seat are not stopping to scan a code. Basic maps and clear street-level directions were added to the letter itself, with the recommendation that a second adult accompany the family to handle the journey.',
   },
+]
+
+const guidePages = [
+  { src: guideNightBefore, alt: 'Night before the EEG', caption: 'Night before — activity suggestions and the step-by-step Teddy Bear Mock EEG walkthrough' },
+  { src: guideMorning, alt: 'Morning of the EEG', caption: 'Morning of the EEG — how to spend the final hours before the appointment' },
+  { src: guideJourney, alt: 'Journey to Temple Street', caption: 'The journey — directions to the department plus a spray bottle game to keep children alert in the car' },
+  { src: guideHome, alt: 'After the EEG', caption: 'After the EEG — what to monitor at home and how results will be communicated' },
+  { src: guideDrawing1, alt: 'Colouring page — koala with EEG electrodes', caption: 'Colouring page — koala with EEG electrodes, keeping children engaged while parents read' },
+  { src: guideDrawing2, alt: 'Colouring page — fox', caption: 'Colouring page — fox illustration, second nocturnal animal page' },
 ]
 
 const validationQuotes = [
@@ -218,8 +233,8 @@ export default function TempleStreetCase() {
             A dedicated guide for parents covering the night before the appointment, the journey to the hospital, what to expect in the department, and what to do in the event of a seizure. Content was shaped by parent-tested activity recommendations and developed in partnership with Epilepsy Ireland for the seizure safety section. Two coloring pages featuring nocturnal animals with EEG electrodes were included as a tool for children while parents read.
           </p>
 
-          {/* Hospital context photo */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+          {/* Hospital context photos */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
             <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
               <img
                 src={bearReception}
@@ -242,6 +257,23 @@ export default function TempleStreetCase() {
                 <p className="text-sm text-slate-500">The full EEG setup — equipment, monitoring screen, and the clinical environment children will encounter</p>
               </div>
             </div>
+          </div>
+
+          {/* Guide pages grid */}
+          <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-6">Inside the guide</p>
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+            {guidePages.map((page) => (
+              <div key={page.alt} className="rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-white">
+                <img
+                  src={page.src}
+                  alt={page.alt}
+                  className="w-full block"
+                />
+                <div className="p-3 border-t border-slate-100">
+                  <p className="text-xs text-slate-500 leading-snug">{page.caption}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
