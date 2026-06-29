@@ -44,29 +44,18 @@ function Footer() {
   )
 }
 
-const howILead = [
+const approach = [
   {
     heading: 'Delivery pragmatism',
-    body: 'Fixed-price contracts live or die on scope discipline. I protect the backlog, document design rationale so it survives late challenges, and negotiate scope down with evidence rather than instinct. When timelines are tight, I distinguish what is essential from what is desirable and make that case clearly.',
-  },
-  {
-    heading: 'Designing defensibly',
-    body: 'In unstable delivery environments, verbal sign-off is not enough. I build paper trails, introduce process changes when existing ones are breaking, and make assumptions explicit so decisions survive being revisited. On one project, I required SMEs to sign off directly on individual Jira tickets; it reduced churn and kept engineering on track.',
+    body: 'Fixed-price contracts live or die on scope discipline. I protect the backlog, document design rationale so it survives late challenges, build paper trails so decisions do not rely on verbal sign-off, and introduce process changes when existing ones are breaking. When timelines are tight, I distinguish what is essential from what is desirable and make that case clearly.',
   },
   {
     heading: 'Growing capability',
     body: 'I mentor designers on both craft and confidence, run UX education sessions for developers and business analysts, and have led on hiring and building design capability across the team. I have also created reusable design infrastructure (including a baseline line-of-business template) to reduce ramp-up time on future engagements.',
   },
-]
-
-const philosophy = [
   {
     heading: 'Know the rules before you design',
     body: 'Timeline, architecture, stakeholder power, contractual scope: these are not obstacles to good design, they define what good design means in this context. I establish those constraints first, then find the best achievable solution within them.',
-  },
-  {
-    heading: 'Back your judgment under pressure',
-    body: 'In consulting, the ideal process rarely survives contact with delivery. When a story hits the rocks and engineering needs a working solution signed off by the client that afternoon, you lean on experience, do rapid ideation, and back your own design judgment. The alternative is not available.',
   },
   {
     heading: 'Think in releases, not deliverables',
@@ -76,34 +65,19 @@ const philosophy = [
 
 function HowILead() {
   return (
-    <>
-      <section className="how-i-lead">
-        <div className="how-i-lead-inner">
-          <h2 className="how-i-lead-label">How I lead</h2>
-          <div className="how-i-lead-grid">
-            {howILead.map(item => (
-              <div key={item.heading} className="how-i-lead-item">
-                <h3>{item.heading}</h3>
-                <p>{item.body}</p>
-              </div>
-            ))}
-          </div>
+    <section className="how-i-lead">
+      <div className="how-i-lead-inner">
+        <h2 className="how-i-lead-label">How I work</h2>
+        <div className="how-i-lead-grid">
+          {approach.map(item => (
+            <div key={item.heading} className="how-i-lead-item">
+              <h3>{item.heading}</h3>
+              <p>{item.body}</p>
+            </div>
+          ))}
         </div>
-      </section>
-      <section className="philosophy">
-        <div className="how-i-lead-inner">
-          <h2 className="how-i-lead-label">What I believe</h2>
-          <div className="how-i-lead-grid">
-            {philosophy.map(item => (
-              <div key={item.heading} className="how-i-lead-item">
-                <h3>{item.heading}</h3>
-                <p>{item.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-    </>
+      </div>
+    </section>
   )
 }
 
