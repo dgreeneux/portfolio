@@ -99,13 +99,13 @@ export default function DevUJMCase() {
 
             <div className="mb-10">
               <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">The problem</p>
-              <p className="text-lg text-slate-900 leading-relaxed font-medium">
+              <p className="text-lg text-slate-900 leading-relaxed font-medium max-w-3xl">
                 Digital delivery projects were generating significant unplanned work for front-end developers: repeated builds, late corrections, and implementation cycles that should not have been necessary. The root causes were not visible in any project backlog. They lived in the gaps between design handoff, story definition, and implementation: the invisible friction that accumulates when teams assume alignment they do not actually have.
               </p>
             </div>
 
             <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">My role</p>
-            <p className="text-lg text-slate-500 leading-relaxed mb-10">
+            <p className="text-lg text-slate-500 leading-relaxed mb-10 max-w-3xl">
               Rather than hypothesising about what was causing the repeated work, I proposed a structured investigation: a half-day journey mapping session with the developers who had worked across these projects. I designed the session format, recruited participants, booked the space, and facilitated the day. A junior designer attended to learn the facilitation process. A senior designer based in another office joined remotely, both to contribute findings and to understand how this kind of session is structured, so they could run one with their own team.
             </p>
 
@@ -147,11 +147,11 @@ export default function DevUJMCase() {
         <div className="max-w-7xl mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-6">From the session</p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-              <img src={sessionPic1} alt="Journey mapping session: developers mapping individual workflows" className="w-full block" />
+            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm" style={{ aspectRatio: '4/3' }}>
+              <img src={sessionPic1} alt="Journey mapping session: developers mapping individual workflows" className="w-full h-full object-cover block" />
             </div>
-            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-              <img src={sessionPic2} alt="Group synthesis: pain points grouped and prioritised" className="w-full block" />
+            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm" style={{ aspectRatio: '4/3' }}>
+              <img src={sessionPic2} alt="Group synthesis: pain points grouped and prioritised" className="w-full h-full object-cover block" />
             </div>
           </div>
         </div>
@@ -194,7 +194,7 @@ export default function DevUJMCase() {
       </section>
 
       {/* Recommendations */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-slate-900 mb-10">Recommendations</h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
