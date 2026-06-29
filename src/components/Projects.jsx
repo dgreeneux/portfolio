@@ -48,6 +48,7 @@ const moreWork = [
     title: 'Accessibility audit tool for design tokens',
     description: 'A NotebookLM-powered tool that automates WCAG 2.0 contrast auditing from a single JSON token file, eliminating manual colour extraction across 25+ white-label brands.',
     tags: ['Design Tooling', 'Accessibility', 'WCAG', 'AI'],
+    thumbnail: accessibilityThumb,
   },
 ]
 
@@ -91,6 +92,11 @@ export default function Projects() {
           <div className="more-work-list">
             {moreWork.map(project => (
               <Link key={project.slug} to={`/project/${project.slug}`} className="more-work-item">
+                <div className="more-work-thumb">
+                  {project.thumbnail
+                    ? <img src={project.thumbnail} alt={project.title} />
+                    : <div className="more-work-thumb-placeholder" />}
+                </div>
                 <div className="more-work-text">
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
