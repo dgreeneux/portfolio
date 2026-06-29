@@ -91,10 +91,10 @@ const decisions = [
 ]
 
 const guidePages = [
-  { src: guideNightBefore, alt: 'Night before the EEG', caption: 'Night before:activity suggestions and the step-by-step Teddy Bear Mock EEG walkthrough' },
-  { src: guideMorning, alt: 'Morning of the EEG', caption: 'Morning of the EEG:how to spend the final hours before the appointment' },
-  { src: guideJourney, alt: 'Journey to Temple Street', caption: 'The journey:directions to the department plus a spray bottle game to keep children alert in the car' },
-  { src: guideHome, alt: 'After the EEG', caption: 'After the EEG:what to monitor at home and how results will be communicated' },
+  { src: guideNightBefore, alt: 'Night before the EEG', caption: 'Night before: activity suggestions and the step-by-step Teddy Bear Mock EEG walkthrough' },
+  { src: guideMorning, alt: 'Morning of the EEG', caption: 'Morning of the EEG: how to spend the final hours before the appointment' },
+  { src: guideJourney, alt: 'Journey to Temple Street', caption: 'The journey: directions to the department plus a spray bottle game to keep children alert in the car' },
+  { src: guideHome, alt: 'After the EEG', caption: 'After the EEG: what to monitor at home and how results will be communicated' },
   { src: guideDrawing1, alt: 'Colouring page:koala with EEG electrodes', caption: 'Colouring page:koala with EEG electrodes, keeping children engaged while parents read' },
   { src: guideDrawing2, alt: 'Colouring page:fox', caption: 'Colouring page:fox illustration, second nocturnal animal page' },
 ]
@@ -109,7 +109,7 @@ const validationQuotes = [
     context: 'Parent, awaiting first sleep-deprived EEG',
   },
   {
-    quote: 'Fantastic improvement on the original. Clear and concise:this will genuinely help families prepare.',
+    quote: 'Fantastic improvement on the original. Clear and concise. This will genuinely help families prepare.',
     context: 'Neurophysiology department staff',
   },
 ]
@@ -164,13 +164,13 @@ export default function TempleStreetCase() {
             <div className="mb-10">
               <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">The challenge</p>
               <p className="text-lg text-slate-900 leading-relaxed font-medium">
-                A sleep-deprived EEG means keeping a young child:often with epilepsy, ASD, or other complex conditions:awake through the night, navigating an unfamiliar hospital in the early morning, and then holding them still while electrodes are attached to their scalp. In 2019, 15% of EEG appointment slots at Children's Health Ireland at Temple Street went unused because families weren't adequately prepared. Parents were failing the process not through negligence but through lack of accessible, understandable information.
+                A sleep-deprived EEG means keeping a young child, often with epilepsy, ASD, or other complex conditions, awake through the night, navigating an unfamiliar hospital in the early morning, and then holding them still while electrodes are attached to their scalp. In 2019, 15% of EEG appointment slots at Children's Health Ireland at Temple Street went unused because families weren't adequately prepared. Parents were failing the process not through negligence but through lack of accessible, understandable information.
               </p>
             </div>
 
             <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">My role</p>
             <p className="text-lg text-slate-500 leading-relaxed mb-10">
-              This was the final major project of my MA in Design at the National College of Art and Design (NCAD), undertaken in direct partnership with the Neurophysiology Department at Children's Health Ireland at Temple Street. I led the end-to-end design process:from research through to validated final deliverables:producing a redesigned appointment letter, a comprehensive sleep deprivation guide for parents, and a restructured department website. The project ran under real constraints: no print budget, time-limited staff access, and a user group under significant emotional stress.
+              This was the final major project of my MA in Design at the National College of Art and Design (NCAD), undertaken in direct partnership with the Neurophysiology Department at Children's Health Ireland at Temple Street. I led the end-to-end design process, from research through to validated final deliverables, producing a redesigned appointment letter, a comprehensive sleep deprivation guide for parents, and a restructured department website. The project ran under real constraints: no print budget, time-limited staff access, and a user group under significant emotional stress.
             </p>
           </div>
         </div>
@@ -181,7 +181,7 @@ export default function TempleStreetCase() {
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-slate-900 mb-3">Research</h2>
           <p className="text-lg text-slate-500 mb-10 max-w-2xl">
-            The project began with a lean sigma report already commissioned by the department:a rare gift of quantified baseline data. That was followed by primary research across three groups.
+            The project began with a lean sigma report already commissioned by the department, a rare gift of quantified baseline data. That was followed by primary research across three groups.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {researchFindings.map((f, i) => (
@@ -333,7 +333,7 @@ export default function TempleStreetCase() {
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-slate-900 mb-4">Validation</h2>
           <p className="text-lg text-slate-500 mb-10 max-w-2xl">
-            The final guide was shared with 40 parents. Nine responded:a strong return rate for an unsolicited design validation. The appointment letter and guide were reviewed by two department staff members, who provided language feedback on the seizure section and confirmed the letter layout was a clear improvement.
+            The final guide was shared with 40 parents. Nine responded, a strong return rate for an unsolicited design validation. The appointment letter and guide were reviewed by two department staff members, who provided language feedback on the seizure section and confirmed the letter layout was a clear improvement.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {validationQuotes.map((q, i) => (

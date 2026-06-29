@@ -11,10 +11,10 @@ import desk5 from '../assets/Desk_5.png'
 // ─── Mobile screens ───────────────────────────────────────────────────────────
 
 export const mobileScreens = [
-  { id: 'mob-1', src: mob1, alt: 'About you:personal details', label: 'About you' },
+  { id: 'mob-1', src: mob1, alt: 'About you: personal details', label: 'About you' },
   { id: 'mob-2', src: mob2, alt: 'Driving history', label: 'Driving history' },
-  { id: 'mob-3', src: mob3, alt: 'Enter reg:car and drivers', label: 'Enter reg' },
-  { id: 'mob-4', src: mob4, alt: 'Car details:auto-populated', label: 'Car details' },
+  { id: 'mob-3', src: mob3, alt: 'Enter reg: car and drivers', label: 'Enter reg' },
+  { id: 'mob-4', src: mob4, alt: 'Car details: auto-populated', label: 'Car details' },
 ]
 
 // ─── Mobile hotspot annotations ───────────────────────────────────────────────

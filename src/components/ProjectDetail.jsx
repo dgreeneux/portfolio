@@ -12,8 +12,8 @@ const projects = {
     description: 'Designing a pick-and-mix cover selection and payment experience for commercial insurance brokers.',
     tags: ['UX Design', 'Interaction Design', 'Insurance'],
     images: [
-      { src: pickAndMixImg, caption: 'Pick and mix covers:selecting products for the client' },
-      { src: paymentImg, caption: 'Payment:choosing a payment method for the policy' },
+      { src: pickAndMixImg, caption: 'Pick and mix covers: selecting products for the client' },
+      { src: paymentImg, caption: 'Payment: choosing a payment method for the policy' },
     ],
   },
 }
