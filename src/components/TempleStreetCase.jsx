@@ -4,7 +4,8 @@ import './CarHomeCase.css'
 import bearHero from '../assets/Temple Street Bear.jpg'
 import bearSetup from '../assets/Temple Street Bear_6.jpg'
 import bearReception from '../assets/Temple Street Bear_11.jpg'
-import appointmentLetter from '../assets/UpdatedTempleStreetLetter.png'
+import appointmentLetterP1 from '../assets/UpdatedTempleStreetLetter_2.png'
+import appointmentLetterP2 from '../assets/UpdatedTempleStreetLetter.png'
 import websiteScreen1 from '../assets/UpdatedTempleStreetWebsite_1.png'
 import websiteScreen2 from '../assets/UpdatedTempleStreetWebsite_2.png'
 import websiteScreen3 from '../assets/UpdatedTempleStreetWebsite_3.png'
@@ -222,12 +223,13 @@ export default function TempleStreetCase() {
           <p className="text-lg text-slate-500 mb-10 max-w-2xl">
             The original letter was text-heavy, assumed knowledge of the hospital layout, and buried critical information — contact details, cancellation policy, sleep deprivation requirements — deep in unstructured prose. The redesign reorganised content by urgency, replaced directions with a basic map, and introduced a structured table for sleep requirements by age group.
           </p>
-          <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm" style={{ maxWidth: '480px' }}>
-            <img
-              src={appointmentLetter}
-              alt="Redesigned Temple Street EEG appointment letter"
-              className="w-full block"
-            />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4" style={{ maxWidth: '860px' }}>
+            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+              <img src={appointmentLetterP1} alt="Redesigned Temple Street EEG appointment letter — page 1" className="w-full block" />
+            </div>
+            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+              <img src={appointmentLetterP2} alt="Redesigned Temple Street EEG appointment letter — page 2, sleep deprivation table" className="w-full block" />
+            </div>
           </div>
         </div>
       </section>
