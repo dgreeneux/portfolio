@@ -80,7 +80,7 @@ export default function AccessibilityToolCase() {
 
       {/* Nav back */}
       <div className="border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 py-4">
+        <div className="max-w-[1100px] mx-auto px-4 py-4">
           <Link to="/" className="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-slate-900 transition-colors">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -92,7 +92,7 @@ export default function AccessibilityToolCase() {
 
       {/* Hero */}
       <header className="pt-10 pb-6 border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1100px] mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Design Tooling</p>
           <h1 className="text-5xl font-bold text-slate-900 leading-tight mb-4">
             Accessibility audit tooling for design token files
@@ -108,7 +108,7 @@ export default function AccessibilityToolCase() {
       </header>
 
       <section className="pt-8 pb-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1100px] mx-auto px-4">
 
           {/* Challenge */}
           <div className="mb-16">

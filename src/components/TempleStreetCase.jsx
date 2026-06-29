@@ -123,7 +123,7 @@ export default function TempleStreetCase() {
 
       {/* Nav back */}
       <div className="border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 py-4">
+        <div className="max-w-[1100px] mx-auto px-4 py-4">
           <Link to="/" className="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-slate-900 transition-colors">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -145,7 +145,7 @@ export default function TempleStreetCase() {
 
       {/* Header */}
       <header className="pt-10 pb-6 border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1100px] mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Case Study · Children's Health Ireland at Temple Street</p>
           <h1 className="text-5xl font-bold text-slate-900 leading-tight mb-4">
             Redesigning the EEG experience for children and families
@@ -162,7 +162,7 @@ export default function TempleStreetCase() {
 
       {/* Challenge */}
       <section className="pt-8 pb-0 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1100px] mx-auto px-4">
           <div className="mb-16">
             <div className="mb-10">
               <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">The challenge</p>
@@ -181,7 +181,7 @@ export default function TempleStreetCase() {
 
       {/* Research */}
       <section className="py-12 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1100px] mx-auto px-4">
           <h2 className="text-4xl font-bold text-slate-900 mb-3">Research</h2>
           <p className="text-lg text-slate-500 mb-10 max-w-2xl">
             The project began with a lean sigma report already commissioned by the department, a rare gift of quantified baseline data. That was followed by primary research across three groups.
@@ -202,7 +202,7 @@ export default function TempleStreetCase() {
 
       {/* HMW */}
       <section className="py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1100px] mx-auto px-4">
           <h2 className="text-4xl font-bold text-slate-900 mb-10">How might we</h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {hmw.map(h => (
@@ -220,7 +220,7 @@ export default function TempleStreetCase() {
 
       {/* Journey map */}
       <section className="py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1100px] mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             <div>
               <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Design process</p>
@@ -238,7 +238,7 @@ export default function TempleStreetCase() {
 
       {/* Deliverable 1: Appointment letter */}
       <section className="py-12 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1100px] mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Deliverable 01</p>
           <h2 className="text-4xl font-bold text-slate-900 mb-4">Appointment letter</h2>
           <p className="text-lg text-slate-500 mb-10 max-w-2xl">
@@ -276,7 +276,7 @@ export default function TempleStreetCase() {
 
       {/* Deliverable 2:Sleep guide */}
       <section className="py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1100px] mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Deliverable 02</p>
           <h2 className="text-4xl font-bold text-slate-900 mb-4">Sleep deprivation guide</h2>
           <p className="text-lg text-slate-500 mb-10 max-w-2xl">
@@ -330,7 +330,7 @@ export default function TempleStreetCase() {
 
       {/* Deliverable 3:Website */}
       <section className="py-12 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1100px] mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Deliverable 03</p>
           <h2 className="text-4xl font-bold text-slate-900 mb-4">Department website</h2>
           <p className="text-lg text-slate-500 mb-10 max-w-2xl">
@@ -352,7 +352,7 @@ export default function TempleStreetCase() {
 
       {/* Key design decisions */}
       <section className="py-12 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1100px] mx-auto px-4">
           <h2 className="text-4xl font-bold text-slate-900 mb-10">Key design decisions</h2>
           <div className="space-y-8">
             {decisions.map(d => (
@@ -370,7 +370,7 @@ export default function TempleStreetCase() {
 
       {/* Validation */}
       <section className="py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1100px] mx-auto px-4">
           <h2 className="text-4xl font-bold text-slate-900 mb-4">Validation</h2>
           <p className="text-lg text-slate-500 mb-10 max-w-2xl">
             The final guide was shared with 40 parents. Nine responded, a strong return rate for an unsolicited design validation. The appointment letter and guide were reviewed by two department staff members, who provided language feedback on the seizure section and confirmed the letter layout was a clear improvement.

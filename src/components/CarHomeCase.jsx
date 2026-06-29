@@ -246,7 +246,7 @@ export default function CarHomeCase() {
 
       {/* Nav back */}
       <div className="border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 py-4">
+        <div className="max-w-[1100px] mx-auto px-4 py-4">
           <Link to="/" className="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-slate-900 transition-colors">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -258,7 +258,7 @@ export default function CarHomeCase() {
 
       {/* Hero */}
       <header className="pt-10 pb-6 border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1100px] mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Case Study</p>
 
           <h1 className="text-5xl font-bold text-slate-900 leading-tight mb-4">
@@ -277,7 +277,7 @@ export default function CarHomeCase() {
 
       {/* Section A — Desktop */}
       <section className="pt-8 pb-12 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1100px] mx-auto px-4">
           <div className="mb-16">
             <div className="mb-10">
               <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">The challenge</p>
@@ -338,7 +338,7 @@ export default function CarHomeCase() {
 
       {/* Section B — Mobile */}
       <section className="py-12">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1100px] mx-auto px-4">
           <div className="mb-8">
             <h2 className="text-4xl font-bold text-slate-900 mb-4">02. Mobile Journey</h2>
             <p className="text-lg text-slate-500">
@@ -351,7 +351,7 @@ export default function CarHomeCase() {
 
       {/* Outcome */}
       <section className="py-12 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1100px] mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Delivery</p>
           <p className="text-lg text-slate-900 leading-relaxed font-medium max-w-3xl">
             The platform was delivered on schedule within a fixed-price contract. It is going live with the first partner in July 2026, six months from project kick-off, as committed.

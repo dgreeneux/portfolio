@@ -65,7 +65,7 @@ export default function DevUJMCase() {
 
       {/* Nav back */}
       <div className="border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 py-4">
+        <div className="max-w-[1100px] mx-auto px-4 py-4">
           <Link to="/" className="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-slate-900 transition-colors">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -77,7 +77,7 @@ export default function DevUJMCase() {
 
       {/* Hero */}
       <header className="pt-10 pb-6 border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1100px] mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Internal Research · Design Operations</p>
           <h1 className="text-5xl font-bold text-slate-900 leading-tight mb-4">
             Researching the design-to-dev handoff gap
@@ -94,7 +94,7 @@ export default function DevUJMCase() {
 
       {/* Challenge */}
       <section className="pt-8 pb-0 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1100px] mx-auto px-4">
           <div className="mb-16">
 
             <div className="mb-10">
@@ -144,7 +144,7 @@ export default function DevUJMCase() {
 
       {/* Session photos */}
       <section className="py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1100px] mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-6">From the session</p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm" style={{ aspectRatio: '4/3' }}>
@@ -159,7 +159,7 @@ export default function DevUJMCase() {
 
       {/* Findings */}
       <section className="py-12 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1100px] mx-auto px-4">
           <h2 className="text-4xl font-bold text-slate-900 mb-3">What we found</h2>
           <p className="text-lg text-slate-500 mb-10 max-w-2xl">
             Four pain points appeared consistently across every developer's journey map. None were surprising individually, but seeing them all in one room made their combined cost legible for the first time.
@@ -177,7 +177,7 @@ export default function DevUJMCase() {
 
       {/* Recommendations */}
       <section className="py-12 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1100px] mx-auto px-4">
           <h2 className="text-4xl font-bold text-slate-900 mb-10">Recommendations</h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {recommendations.map(r => (
@@ -195,7 +195,7 @@ export default function DevUJMCase() {
 
       {/* Outcome */}
       <section className="py-12 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1100px] mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Outcome</p>
           <p className="text-lg text-slate-900 leading-relaxed font-medium max-w-3xl mb-6">
             The findings were presented to the wider professional services group. The session format and materials were shared with UX designers in Kuala Lumpur and Toronto, who used them to run equivalent sessions with their own development teams independently.
