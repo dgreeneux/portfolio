@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { mobileScreens, mobileHotspots, desktopScreens, desktopAnnotations } from '../data/carHomeData'
 import '../tailwind.css'
 import './CarHomeCase.css'
+import carHomeUserFlow from '../assets/Carandhome rsearch user flow.png'
 
 // ─── Hotspot ─────────────────────────────────────────────────────────────────
 
@@ -311,6 +312,16 @@ export default function CarHomeCase() {
               <p className="text-lg text-slate-500 leading-relaxed">
                 The carrier provided their own research output at the start of the engagement: a mapped user journey, funnel analytics showing where users dropped off across the existing flow, and a documented list of known pain points from their internal research programme. Three headline findings shaped the core design decisions: quote page drop-off, difficulty scanning the comparison table, and confusion from vague labels throughout the flow. The funnel data also surfaced two specific flow changes: the product selection order was revised to put bikes before items (users were consistently adding bicycles to the items section because bikes appeared later in the flow, causing them to realise the mistake and backtrack), and multi-question form pages were restructured as natural language sentences users can review and correct, combining related inputs into a readable summary rather than a series of separate labelled fields, reducing perceived form length without removing any required questions.
               </p>
+            </div>
+
+            <div className="mb-10">
+              <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Discovery artefact</p>
+              <p className="text-base text-slate-500 leading-relaxed mb-6">
+                The user flow below was captured during the discovery phase, mapping the core quote-and-buy journey at a process level before detailed design began. Used internally to align the team on scope boundaries and sequence. Specific business rules are genericised.
+              </p>
+              <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+                <img src={carHomeUserFlow} alt="Car and home quote-and-buy discovery user flow" className="w-full block" />
+              </div>
             </div>
 
             <div>

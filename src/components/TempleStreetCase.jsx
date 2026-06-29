@@ -6,6 +6,9 @@ import bearSetup from '../assets/Temple Street Bear_6.jpg'
 import bearReception from '../assets/Temple Street Bear_11.jpg'
 import appointmentLetterP1 from '../assets/UpdatedTempleStreetLetter_2.png'
 import appointmentLetterP2 from '../assets/UpdatedTempleStreetLetter.png'
+import oldLetterP1 from '../assets/Olddepartmentletter-page1.png'
+import oldLetterP2 from '../assets/Olddepartmentletter-page2.png'
+import ncadJourneyMap from '../assets/NCAD journey map.png'
 import websiteScreen1 from '../assets/UpdatedTempleStreetWebsite_1.png'
 import websiteScreen2 from '../assets/UpdatedTempleStreetWebsite_2.png'
 import websiteScreen3 from '../assets/UpdatedTempleStreetWebsite_3.png'
@@ -215,20 +218,46 @@ export default function TempleStreetCase() {
         </div>
       </section>
 
-      {/* Deliverable 1:Appointment letter */}
+      {/* Journey map */}
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Design process</p>
+          <h2 className="text-4xl font-bold text-slate-900 mb-4">Solution mapping</h2>
+          <p className="text-lg text-slate-500 mb-10 max-w-2xl">
+            Research findings were synthesised into a journey map covering the full family experience from appointment confirmation through to recovery at home. This became the organising structure for the three deliverables.
+          </p>
+          <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+            <img src={ncadJourneyMap} alt="Solution journey map: end-to-end family experience for Temple Street EEG" className="w-full block" />
+          </div>
+        </div>
+      </section>
+
+      {/* Deliverable 1: Appointment letter */}
       <section className="py-12 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Deliverable 01</p>
           <h2 className="text-4xl font-bold text-slate-900 mb-4">Appointment letter</h2>
           <p className="text-lg text-slate-500 mb-10 max-w-2xl">
-            The original letter was text-heavy, assumed knowledge of the hospital layout, and buried critical information:contact details, cancellation policy, sleep deprivation requirements:deep in unstructured prose. The redesign reorganised content by urgency, replaced directions with a basic map, and introduced a structured table for sleep requirements by age group.
+            The original letter was text-heavy, assumed knowledge of the hospital layout, and buried critical information — contact details, cancellation policy, sleep deprivation requirements — deep in unstructured prose. The redesign reorganised content by urgency, replaced directions with a basic map, and introduced a structured table for sleep requirements by age group.
           </p>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4" style={{ maxWidth: '860px' }}>
+
+          <p className="text-xs font-semibold text-slate-400 tracking-widest uppercase mb-4">Before</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-10" style={{ maxWidth: '860px' }}>
             <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-              <img src={appointmentLetterP1} alt="Redesigned Temple Street EEG appointment letter:page 1" className="w-full block" />
+              <img src={oldLetterP1} alt="Original Temple Street EEG appointment letter: page 1" className="w-full block" />
             </div>
             <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-              <img src={appointmentLetterP2} alt="Redesigned Temple Street EEG appointment letter:page 2, sleep deprivation table" className="w-full block" />
+              <img src={oldLetterP2} alt="Original Temple Street EEG appointment letter: page 2" className="w-full block" />
+            </div>
+          </div>
+
+          <p className="text-xs font-semibold text-slate-400 tracking-widest uppercase mb-4">After</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4" style={{ maxWidth: '860px' }}>
+            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+              <img src={appointmentLetterP1} alt="Redesigned Temple Street EEG appointment letter: page 1" className="w-full block" />
+            </div>
+            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+              <img src={appointmentLetterP2} alt="Redesigned Temple Street EEG appointment letter: page 2, sleep deprivation table" className="w-full block" />
             </div>
           </div>
         </div>

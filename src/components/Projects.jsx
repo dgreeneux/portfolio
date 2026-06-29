@@ -4,6 +4,7 @@ import pickAndMixImg from '../assets/Pick and Mix.png'
 import carHomeThumb from '../assets/Desk_1.png'
 import templeStreetThumb from '../assets/Temple Street Bear.jpg'
 import accessibilityThumb from '../assets/Screenshot 2026-06-27 at 23.59.48.png'
+import devUJMThumb from '../assets/DevJourneyMapsession pic.jpg'
 
 const projects = [
   {
@@ -37,7 +38,7 @@ const projects = [
     title: 'Researching the design-to-dev handoff gap',
     description: 'A structured journey mapping session with front-end developers to surface and document the systemic friction in the design-to-development handoff. Findings shared across three offices.',
     tags: ['UX Research', 'Facilitation', 'Design Operations', 'Internal'],
-    thumbnail: null,
+    thumbnail: devUJMThumb,
   },
 ]
 
