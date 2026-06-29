@@ -173,9 +173,6 @@ export default function CommercialCase() {
           </div>
 
           {/* Featured screens */}
-          <p className="text-sm text-slate-400 leading-relaxed mb-10 max-w-2xl">
-            Note on the screens below: the quote builder is the quote page. In this product, quoting and buying happen in a single configurable flow: brokers build the risk, price it, and bind it without leaving the screen. The screens shown represent the two most complex interaction points in that journey.
-          </p>
           <div className="space-y-20">
             {commercialScreens.map((screen) => (
               <div key={screen.id}>
