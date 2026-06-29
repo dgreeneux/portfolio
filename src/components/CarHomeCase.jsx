@@ -299,14 +299,17 @@ export default function CarHomeCase() {
             </div>
 
             <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">My role</p>
-            <p className="text-lg text-slate-500 leading-relaxed mb-10">
+            <p className="text-lg text-slate-500 leading-relaxed mb-6">
               I led the UX effort as the design lead, directing a supporting designer and serving as the UX representative in the core delivery leadership team. This was a fixed-price contract with a demanding client — scope protection was as critical as the design itself. The backlog was deliberately tight to meet the timeline, and the customer used the ambiguity in story definitions to push for additional scope at every opportunity. My job was to reason them down from their ideal state to what was actually deliverable, quickly and with clear rationale. One concrete example: when the customer's own UX designer proposed bespoke mid-term adjustment flows with reduced page sets for each journey type, I successfully argued against it. The work was unscoped, it would have prevented reuse of the existing submission flow, and users familiar with the quote-and-buy journey would already know the pattern. The proposal was dropped and the delivery timeline held.
+            </p>
+            <p className="text-lg text-slate-500 leading-relaxed mb-10">
+              A recurring dynamic throughout was being positioned between competing pressures: the scope ambition of the client's own UX designer, component feasibility constraints from our engineering team, and timeline protection from the project manager. My role often involved finding a position the client's designer could accept and our developers could actually build — then documenting it clearly enough that it held when the conversation resumed the following sprint. The PM and I worked closely to keep client demands within achievable increments; the engineers and I worked closely to distinguish where custom component work was genuinely warranted from where a platform default was good enough.
             </p>
 
             <div className="mb-10">
               <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Research input</p>
               <p className="text-lg text-slate-500 leading-relaxed">
-                The carrier provided their own research output at the start of the engagement: a mapped user journey, funnel analytics showing where users dropped off across the existing flow, and a documented list of known pain points from their internal research programme. Three findings directly shaped design decisions: significant drop-off on the quote page, user difficulty scanning the quote comparison table, and confusion caused by vague labels and error messages throughout the flow. These fed into the annotation decisions called out in the screens below.
+                The carrier provided their own research output at the start of the engagement: a mapped user journey, funnel analytics showing where users dropped off across the existing flow, and a documented list of known pain points from their internal research programme. Three headline findings shaped the core design decisions — quote page drop-off, difficulty scanning the comparison table, and confusion from vague labels throughout the flow. The funnel data also surfaced two specific flow changes: the product selection order was revised to put bikes before items (users were consistently adding bicycles to the items section because bikes appeared later in the flow, causing them to realise the mistake and backtrack), and multi-question form pages were restructured as natural language sentences users can review and correct — combining related inputs into a readable summary rather than a series of separate labelled fields, reducing perceived form length without removing any required questions.
               </p>
             </div>
 

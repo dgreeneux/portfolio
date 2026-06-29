@@ -21,7 +21,7 @@ export const commercialScreens = [
       {
         step: '03',
         heading: 'One flow, two mental models',
-        body: 'Broker agents pricing a risk and direct customers buying their own cover land on the same screen with different needs. A broker is working efficiently through a known product; a customer is navigating an unfamiliar one for the first time. Rather than bifurcating the journey, the design uses progressive disclosure and contextual help to serve both without adding friction for either.',
+        body: 'Broker agents pricing a risk and direct customers buying their own cover land on the same screen, but the differences run deeper than experience level. Brokers can refer a quote to an underwriter when it falls outside standard acceptance criteria, and can apply commission reductions; direct customers cannot, and face stricter limits on the covers available to them. A broker works through a known product efficiently; a customer is navigating an unfamiliar one for the first time. Rather than bifurcating the journey, conditional field visibility and contextual guidance serve both without branching the flow.',
       },
     ],
   },

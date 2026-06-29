@@ -126,7 +126,7 @@ export default function CommercialCase() {
             {/* My role */}
             <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">My role</p>
             <p className="text-lg text-slate-500 leading-relaxed mb-10">
-              I joined as part of a design team working across the submission flow. When the design lead was reassigned mid-project, I took full ownership of all design work — becoming the sole designer responsible for the quote page (the most complex screen in the product), the logged-in portal experience, and the white-label theming configuration system that allowed each broker brand to self-configure without requiring bespoke design work per onboarding.
+              I joined as part of a design team working across the submission flow. The project ran during a period of significant resourcing pressure across our EMEA digital practice — demand for platform work was high, and two lead designers left the company in quick succession. With the team reduced to one remaining lead and myself covering the entire EMEA region, I stepped into full design ownership of the Commercial Underwriters track: the quote page (the most complex screen in the product), the logged-in portal experience, and the white-label theming configuration system. I had access to the remaining lead for consultation, but day-to-day design decisions and the client relationship were mine to manage. It was, in practice, an accelerated entry into lead-level delivery.
             </p>
 
             {/* Discovery context */}
@@ -146,8 +146,11 @@ export default function CommercialCase() {
               <p className="text-lg text-slate-500 leading-relaxed mb-6">
                 My response was to design defensibly. Rather than waiting for consensus that rarely came, I documented the rationale behind every significant decision so it could survive a challenge without relying on verbal sign-off. When requirements were genuinely ambiguous, I made the more conservative choice and flagged the assumption explicitly. When the cycle of late-stage demo changes threatened delivery, I escalated to the project manager and introduced a process change: SMEs were required to sign off directly on individual Jira tickets before they could be closed, creating a paper trail that made reversals visible and accountable. It didn't eliminate the dysfunction but it reduced the churn and kept engineering on track.
               </p>
-              <p className="text-lg text-slate-500 leading-relaxed">
+              <p className="text-lg text-slate-500 leading-relaxed mb-6">
                 The white-label requirement added a third constraint. The carrier was reluctant to interface directly with its broker clients, which meant we were building theming tooling for brands we had never spoken to. We resolved this the same way we handled the theming architecture: define the configurable surface clearly, limit partner theming to brand colour, typography, illustration, and content rules, and build the tooling flexible enough that brokers could self-configure within those bounds without needing a designer in the room.
+              </p>
+              <p className="text-lg text-slate-500 leading-relaxed">
+                Throughout, I was regularly caught between the client's commercial expectations and what our engineering team could deliver on the agreed schedule. Working closely with the project manager on scope management, and with engineers to understand what was technically feasible versus where a platform default was sufficient, was as much a part of the role as the design work itself. When client expectations and engineering constraints were in direct conflict, finding a position both sides could commit to — and documenting it clearly enough to prevent revisits — became a core skill on this project.
               </p>
             </div>
           </div>
