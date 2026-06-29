@@ -9,7 +9,7 @@ import slide2 from '../assets/Devjourneysession-slide2.png'
 const sessionStats = [
   { metric: '4', label: 'front-end developers from across active digital projects' },
   { metric: '3', label: 'UX facilitators, including a junior designer learning the process' },
-  { metric: '2 hrs', label: 'core workshop: mapping, prioritisation, and solution ideation' },
+  { metric: '4', label: 'systemic pain points surfaced consistently across every developer map' },
 ]
 
 const findings = [
