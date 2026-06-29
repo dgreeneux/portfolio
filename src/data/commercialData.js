@@ -1,5 +1,6 @@
 import pickAndMix from '../assets/Pick and Mix.png'
 import payment from '../assets/Payment.png'
+import policyDetails from '../assets/Underwriters_Policydetails-Covers.png'
 
 export const commercialScreens = [
   {
@@ -40,6 +41,24 @@ export const commercialScreens = [
         step: '02',
         heading: 'Pre-sale disclosure, handled inline',
         body: 'Policy documents surface at the payment stage before the user commits, satisfying FCA pre-sale disclosure requirements without redirecting users to a separate document portal. Compliance is embedded in the flow, not bolted on after the fact.',
+      },
+    ],
+  },
+  {
+    id: 'policy-details',
+    src: policyDetails,
+    alt: 'Customer dashboard: policy details and active covers',
+    label: '03. Customer Dashboard',
+    annotations: [
+      {
+        step: '01',
+        heading: 'A simplified view for self-service customers',
+        body: 'Once a policy is bound, direct customers land on a dashboard showing their active covers, key dates, and documents. The view is deliberately stripped back compared to the broker-facing quote screen — customers need to understand what they have, not how it was configured. Cover names and limits are presented in plain language, with documents accessible without navigating away.',
+      },
+      {
+        step: '02',
+        heading: 'Cover status at a glance',
+        body: 'Each cover section shows its active status, sum insured, and excess in a consistent card format, giving customers a reliable mental model of their policy without requiring them to open a document. The layout maps directly to the quote screen structure, so customers who completed the journey themselves can orientate quickly.',
       },
     ],
   },
