@@ -183,7 +183,7 @@ export default function TempleStreetCase() {
       <section className="py-12 bg-slate-50">
         <div className="max-w-[1100px] mx-auto px-4">
           <h2 className="text-4xl font-bold text-slate-900 mb-3">Research</h2>
-          <p className="text-lg text-slate-500 mb-10 max-w-2xl">
+          <p className="text-lg text-slate-500 mb-10">
             The project began with a lean sigma report already commissioned by the department, a rare gift of quantified baseline data. That was followed by primary research across three groups.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -241,7 +241,7 @@ export default function TempleStreetCase() {
         <div className="max-w-[1100px] mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Deliverable 01</p>
           <h2 className="text-4xl font-bold text-slate-900 mb-4">Appointment letter</h2>
-          <p className="text-lg text-slate-500 mb-10 max-w-2xl">
+          <p className="text-lg text-slate-500 mb-10">
             The original letter was text-heavy, assumed knowledge of the hospital layout, and buried critical information (contact details, cancellation policy, sleep deprivation requirements) deep in unstructured prose. The redesign reorganised content by urgency, replaced directions with a basic map, and introduced a structured table for sleep requirements by age group.
           </p>
 
@@ -279,7 +279,7 @@ export default function TempleStreetCase() {
         <div className="max-w-[1100px] mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Deliverable 02</p>
           <h2 className="text-4xl font-bold text-slate-900 mb-4">Sleep deprivation guide</h2>
-          <p className="text-lg text-slate-500 mb-10 max-w-2xl">
+          <p className="text-lg text-slate-500 mb-10">
             A dedicated guide for parents covering the night before the appointment, the journey to the hospital, what to expect in the department, and what to do in the event of a seizure. Content was shaped by parent-tested activity recommendations and developed in partnership with Epilepsy Ireland for the seizure safety section. Two coloring pages featuring nocturnal animals with EEG electrodes were included as a tool for children while parents read.
           </p>
 
@@ -333,7 +333,7 @@ export default function TempleStreetCase() {
         <div className="max-w-[1100px] mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Deliverable 03</p>
           <h2 className="text-4xl font-bold text-slate-900 mb-4">Department website</h2>
-          <p className="text-lg text-slate-500 mb-10 max-w-2xl">
+          <p className="text-lg text-slate-500 mb-10">
             The department's existing web presence mirrored the problems in the letter:unstructured, difficult to scan, and lacking the practical information parents needed before the appointment. The redesign reorganised content around the parent journey, surfacing preparation requirements and contact information without requiring users to read the whole page.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
@@ -372,7 +372,7 @@ export default function TempleStreetCase() {
       <section className="py-12 bg-white">
         <div className="max-w-[1100px] mx-auto px-4">
           <h2 className="text-4xl font-bold text-slate-900 mb-4">Validation</h2>
-          <p className="text-lg text-slate-500 mb-10 max-w-2xl">
+          <p className="text-lg text-slate-500 mb-10">
             The final guide was shared with 40 parents. Nine responded, a strong return rate for an unsolicited design validation. The appointment letter and guide were reviewed by two department staff members, who provided language feedback on the seizure section and confirmed the letter layout was a clear improvement.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">

@@ -99,13 +99,13 @@ export default function DevUJMCase() {
 
             <div className="mb-10">
               <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">The problem</p>
-              <p className="text-lg text-slate-900 leading-relaxed font-medium max-w-3xl">
+              <p className="text-lg text-slate-900 leading-relaxed font-medium">
                 Digital delivery projects were generating significant unplanned work for front-end developers: repeated builds, late corrections, and implementation cycles that should not have been necessary. The root causes were not visible in any project backlog. They lived in the gaps between design handoff, story definition, and implementation: the invisible friction that accumulates when teams assume alignment they do not actually have.
               </p>
             </div>
 
             <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">My role</p>
-            <p className="text-lg text-slate-500 leading-relaxed mb-10 max-w-3xl">
+            <p className="text-lg text-slate-500 leading-relaxed mb-10">
               Rather than hypothesising about what was causing the repeated work, I proposed a structured investigation: a half-day journey mapping session with the developers who had worked across these projects. I designed the session format, recruited participants, booked the space, and facilitated the day. A junior designer attended to learn the facilitation process. A senior designer based in another office joined remotely, both to contribute findings and to understand how this kind of session is structured, so they could run one with their own team.
             </p>
 
@@ -161,7 +161,7 @@ export default function DevUJMCase() {
       <section className="py-12 bg-slate-50">
         <div className="max-w-[1100px] mx-auto px-4">
           <h2 className="text-4xl font-bold text-slate-900 mb-3">What we found</h2>
-          <p className="text-lg text-slate-500 mb-10 max-w-2xl">
+          <p className="text-lg text-slate-500 mb-10">
             Four pain points appeared consistently across every developer's journey map. None were surprising individually, but seeing them all in one room made their combined cost legible for the first time.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -197,10 +197,10 @@ export default function DevUJMCase() {
       <section className="py-12 bg-slate-50">
         <div className="max-w-[1100px] mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Outcome</p>
-          <p className="text-lg text-slate-900 leading-relaxed font-medium max-w-3xl mb-6">
+          <p className="text-lg text-slate-900 leading-relaxed font-medium mb-6">
             The findings were presented to the wider professional services group. The session format and materials were shared with UX designers in Kuala Lumpur and Toronto, who used them to run equivalent sessions with their own development teams independently.
           </p>
-          <p className="text-lg text-slate-500 leading-relaxed max-w-3xl">
+          <p className="text-lg text-slate-500 leading-relaxed">
             The value of the session was less in the individual findings (most of which experienced designers would have guessed) and more in making them visible and shared. Developers who had been navigating these friction points in isolation could see that their experience was structural, not personal. That shift in framing is what makes process change possible.
           </p>
         </div>

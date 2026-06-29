@@ -343,7 +343,7 @@ export default function CarHomeCase() {
       <section className="py-12 bg-slate-50">
         <div className="max-w-[1100px] mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Delivery</p>
-          <p className="text-lg text-slate-900 leading-relaxed font-medium max-w-3xl">
+          <p className="text-lg text-slate-900 leading-relaxed font-medium">
             The platform was delivered on schedule within a fixed-price contract. It is going live with the first partner in July 2026, six months from project kick-off, as committed.
           </p>
         </div>
