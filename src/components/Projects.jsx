@@ -33,11 +33,20 @@ const projects = [
   },
   {
     id: 4,
+    slug: 'developer-ujm',
+    title: 'Researching the design-to-dev handoff gap',
+    description: 'A structured journey mapping session with front-end developers to surface and document the systemic friction in the design-to-development handoff. Findings shared across three offices.',
+    tags: ['UX Research', 'Facilitation', 'Design Operations', 'Internal'],
+    thumbnail: null,
+  },
+]
+
+const moreWork = [
+  {
     slug: 'accessibility-token-audit',
     title: 'Accessibility audit tool for design tokens',
-    description: 'A NotebookLM-powered tool that reads client JSON token files and automatically audits brand colours for WCAG 2.0 compliance across 25+ white-label brands.',
+    description: 'A NotebookLM-powered tool that automates WCAG 2.0 contrast auditing from a single JSON token file, eliminating manual colour extraction across 25+ white-label brands.',
     tags: ['Design Tooling', 'Accessibility', 'WCAG', 'AI'],
-    thumbnail: accessibilityThumb,
   },
 ]
 
@@ -74,6 +83,24 @@ export default function Projects() {
           {rest.map(project => (
             <ProjectCard key={project.id} {...project} imagePosition={project.imagePosition} />
           ))}
+        </div>
+
+        <div className="more-work">
+          <h2>More work</h2>
+          <div className="more-work-list">
+            {moreWork.map(project => (
+              <Link key={project.slug} to={`/project/${project.slug}`} className="more-work-item">
+                <div className="more-work-text">
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                </div>
+                <ul className="project-tags">
+                  {project.tags.map(tag => <li key={tag}>{tag}</li>)}
+                </ul>
+                <span className="more-work-arrow">→</span>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </section>
