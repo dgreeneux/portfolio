@@ -120,8 +120,11 @@ export default function AccessibilityToolCase() {
             </div>
 
             <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">The solution</p>
-            <p className="text-lg text-slate-500 leading-relaxed">
+            <p className="text-lg text-slate-500 leading-relaxed mb-4">
               A NotebookLM-powered tool that reads a client's design token JSON directly, knows which colour values to extract, and runs the full WCAG 2.0 audit automatically. Rather than entering values manually, I provide the JSON file and the tool produces the complete contrast report (AAA, AA, AA18, or DNP for each colour against white and black backgrounds) with plain-language guidance on where each colour can and cannot safely be used. An audit that previously required significant manual work now takes seconds from a single file. Built for my own workflow, with the intention of sharing and extending it once the core audit logic is solid.
+            </p>
+            <p className="text-sm text-slate-400 leading-relaxed">
+              Note on methodology: the WCAG 2.0 contrast calculations use standard relative luminance formulas — the same underlying maths as tools like the EightShapes Contrast Grid. The contribution here is the extraction layer: rather than manually pulling colour values out of a JSON token file and entering them into a separate tool, this notebook reads the token file directly and applies those calculations automatically. The problem it solves is the manual handoff step, not the maths.
             </p>
           </div>
 

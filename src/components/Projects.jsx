@@ -27,7 +27,7 @@ const projects = [
     id: 3,
     slug: 'temple-street-eeg',
     title: 'Redesigning the EEG experience for children and families',
-    description: 'Redesigning how families prepare for paediatric EEG scans at Children\'s Health Ireland, addressing a 15% slot wastage rate through research, information design, and a parent sleep deprivation guide.',
+    description: 'In partnership with the Neurophysiology Department at Children\'s Health Ireland, redesigning the end-to-end experience for families preparing for paediatric EEG scans. Research-led service design addressing a 15% appointment slot wastage rate.',
     tags: ['Healthcare', 'Service Design', 'UX Research', 'Paediatric'],
     thumbnail: templeStreetThumb,
   },
