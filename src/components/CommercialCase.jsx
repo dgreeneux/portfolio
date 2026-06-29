@@ -126,14 +126,14 @@ export default function CommercialCase() {
             {/* My role */}
             <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">My role</p>
             <p className="text-lg text-slate-500 leading-relaxed mb-10">
-              I joined as part of a design team working across the submission flow. The project ran during a period of significant resourcing pressure across our EMEA digital practice — demand for platform work was high, and two lead designers left the company in quick succession. With the team reduced to one remaining lead and myself covering the entire EMEA region, I stepped into full design ownership of the Commercial Underwriters track: the quote page (the most complex screen in the product), the logged-in portal experience, and the white-label theming configuration system. I had access to the remaining lead for consultation, but day-to-day design decisions and the client relationship were mine to manage. It was, in practice, an accelerated entry into lead-level delivery.
+              I joined as part of a design team working across the submission flow. The project ran during a period of significant resourcing pressure across our EMEA digital practice, with demand for platform work high, and two lead designers left the company in quick succession. With the team reduced to one remaining lead and myself covering the entire EMEA region, I stepped into full design ownership of the Commercial Underwriters track: the quote page (the most complex screen in the product), the logged-in portal experience, and the white-label theming configuration system. I had access to the remaining lead for consultation, but day-to-day design decisions and the client relationship were mine to manage. It was, in practice, an accelerated entry into lead-level delivery.
             </p>
 
             {/* Discovery context */}
             <div className="mb-10">
               <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Discovery context</p>
               <p className="text-lg text-slate-500 leading-relaxed">
-                Formal user research with brokers wasn't part of the engagement — discovery was conducted with internal subject matter experts who understood the product domain but weren't always empowered to make decisions on behalf of the business. The existing solution provided a useful reference point: brokers and agents were filling out paper forms and calling customers directly, with no self-service capability at all. That baseline made the design direction clear even without direct user access; the challenge was getting the details right without the usual feedback loops.
+                Formal user research with brokers wasn't part of the engagement; discovery was conducted with internal subject matter experts who understood the product domain but weren't always empowered to make decisions on behalf of the business. The existing solution provided a useful reference point: brokers and agents were filling out paper forms and calling customers directly, with no self-service capability at all. That baseline made the design direction clear even without direct user access; the challenge was getting the details right without the usual feedback loops.
               </p>
             </div>
 
@@ -150,7 +150,7 @@ export default function CommercialCase() {
                 The white-label requirement added a third constraint. The carrier was reluctant to interface directly with its broker clients, which meant we were building theming tooling for brands we had never spoken to. We resolved this the same way we handled the theming architecture: define the configurable surface clearly, limit partner theming to brand colour, typography, illustration, and content rules, and build the tooling flexible enough that brokers could self-configure within those bounds without needing a designer in the room.
               </p>
               <p className="text-lg text-slate-500 leading-relaxed">
-                Throughout, I was regularly caught between the client's commercial expectations and what our engineering team could deliver on the agreed schedule. Working closely with the project manager on scope management, and with engineers to understand what was technically feasible versus where a platform default was sufficient, was as much a part of the role as the design work itself. When client expectations and engineering constraints were in direct conflict, finding a position both sides could commit to — and documenting it clearly enough to prevent revisits — became a core skill on this project.
+                Throughout, I was regularly caught between the client's commercial expectations and what our engineering team could deliver on the agreed schedule. Working closely with the project manager on scope management, and with engineers to understand what was technically feasible versus where a platform default was sufficient, was as much a part of the role as the design work itself. When client expectations and engineering constraints were in direct conflict, finding a position both sides could commit to, and documenting it clearly enough to prevent revisits, became a core skill on this project.
               </p>
             </div>
           </div>
@@ -162,7 +162,7 @@ export default function CommercialCase() {
               {[
                 { metric: '10 Nov 2025', label: 'technical go-live for the PI digital portal' },
                 { metric: '5', label: 'broker portals live by January 2026' },
-                { metric: 'BAU', label: 'platform handed to advisory support, June 2026 — active implementation complete' },
+                { metric: 'BAU', label: 'platform handed to advisory support, June 2026. Active implementation complete.' },
               ].map(({ metric, label }) => (
                 <div key={metric}>
                   <p className="text-2xl font-bold text-slate-900 mb-1">{metric}</p>

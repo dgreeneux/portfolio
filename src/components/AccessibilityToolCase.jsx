@@ -52,7 +52,7 @@ const steps = [
   {
     step: '04',
     heading: 'Deliver plain-language recommendations',
-    body: 'For every colour, the tool explains not just whether it passes, but where it can and cannot safely be used — which backgrounds work, which fail, and why. Brand teams get actionable guidance without needing a designer in the room to interpret the results.',
+    body: 'For every colour, the tool explains not just whether it passes, but where it can and cannot safely be used: which backgrounds work, which fail, and why. Brand teams get actionable guidance without needing a designer in the room to interpret the results.',
   },
 ]
 
@@ -65,12 +65,12 @@ const insights = [
   {
     step: '02',
     heading: 'Scales across 25+ brands without extra effort',
-    body: 'Each new partner onboarding generates a new token file. Running the audit takes seconds per brand rather than manual calculation per colour pair — the time saving compounds as the partner count grows.',
+    body: 'Each new partner onboarding generates a new token file. Running the audit takes seconds per brand rather than manual calculation per colour pair, and the time saving compounds as the partner count grows.',
   },
   {
     step: '03',
     heading: 'Output is immediately actionable',
-    body: 'Plain-language recommendations mean brand teams can act on findings without UX involvement in every remediation. The tool transfers knowledge, not just results — explaining what fails, why, and what to do about it.',
+    body: 'Plain-language recommendations mean brand teams can act on findings without UX involvement in every remediation. The tool transfers knowledge, not just results: explaining what fails, why, and what to do about it.',
   },
 ]
 
@@ -115,13 +115,13 @@ export default function AccessibilityToolCase() {
             <div className="mb-10">
               <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">The problem</p>
               <p className="text-lg text-slate-900 leading-relaxed font-medium">
-                Configuring 25+ white-label broker brands means 25+ unique colour palettes, each defined in a JSON design token file. A plugin tool already existed for accessibility checking, but it still required manually pulling each colour value out of the JSON file and entering it one by one before any test could be run. On a live client token file, that meant extracting values, running each check, and compiling the output by hand — a slow, error-prone process that made proper WCAG auditing something that rarely happened as thoroughly as it should.
+                Configuring 25+ white-label broker brands means 25+ unique colour palettes, each defined in a JSON design token file. A plugin tool already existed for accessibility checking, but it still required manually pulling each colour value out of the JSON file and entering it one by one before any test could be run. On a live client token file, that meant extracting values, running each check, and compiling the output by hand, a slow, error-prone process that made proper WCAG auditing something that rarely happened as thoroughly as it should.
               </p>
             </div>
 
             <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">The solution</p>
             <p className="text-lg text-slate-500 leading-relaxed">
-              A NotebookLM-powered tool that reads a client's design token JSON directly, knows which colour values to extract, and runs the full WCAG 2.0 audit automatically. Rather than entering values manually, I provide the JSON file and the tool produces the complete contrast report — AAA, AA, AA18, or DNP for each colour against white and black backgrounds — with plain-language guidance on where each colour can and cannot safely be used. An audit that previously required significant manual work now takes seconds from a single file. Built for my own workflow, with the intention of sharing and extending it once the core audit logic is solid.
+              A NotebookLM-powered tool that reads a client's design token JSON directly, knows which colour values to extract, and runs the full WCAG 2.0 audit automatically. Rather than entering values manually, I provide the JSON file and the tool produces the complete contrast report (AAA, AA, AA18, or DNP for each colour against white and black backgrounds) with plain-language guidance on where each colour can and cannot safely be used. An audit that previously required significant manual work now takes seconds from a single file. Built for my own workflow, with the intention of sharing and extending it once the core audit logic is solid.
             </p>
           </div>
 
@@ -152,7 +152,7 @@ export default function AccessibilityToolCase() {
           {/* Sample output */}
           <div className="mb-16">
             <h2 className="text-4xl font-bold text-slate-900 mb-3">Sample output</h2>
-            <p className="text-base text-slate-500 mb-8">Contrast audit results for a sample brand token file — 12 key colours assessed against white and black.</p>
+            <p className="text-base text-slate-500 mb-8">Contrast audit results for a sample brand token file. 12 key colours assessed against white and black.</p>
 
             <div className="border border-slate-200 rounded-2xl overflow-hidden">
               {/* Table header */}

@@ -10,7 +10,7 @@ const projects = [
     id: 1,
     slug: 'car-home-quote-and-buy',
     title: 'Inception to go-live in six months',
-    description: 'Validating a scalable white-label partnerships model for one of the world\'s largest insurers — launching two partners on a fixed-price contract while redesigning a complex personal lines quote-and-buy flow for end customers.',
+    description: 'Validating a scalable white-label partnerships model for one of the world\'s largest insurers, launching two partners on a fixed-price contract while redesigning a complex personal lines quote-and-buy flow for end customers.',
     tags: ['Quote & Buy', 'Responsive Design', 'White-label', 'B2C', 'Personal Lines'],
     thumbnail: carHomeThumb,
   },

@@ -20,7 +20,7 @@ const researchFindings = [
   {
     source: 'Lean sigma report',
     stat: '15%',
-    detail: 'of EEG slots went unused in 2019 — children arrived unprepared for sleep deprivation, forcing cancellations. Staff were spending significant time repeating information that should have been in written materials.',
+    detail: 'of EEG slots went unused in 2019, as children arrived unprepared for sleep deprivation, forcing cancellations. Staff were spending significant time repeating information that should have been in written materials.',
   },
   {
     source: '30+ parent interviews',
@@ -30,12 +30,12 @@ const researchFindings = [
   {
     source: 'Staff interviews',
     stat: '',
-    detail: 'Confirmed that patients regularly arrived without adequate sleep deprivation. Staff fielded frequent requests for information that should have been accessible independently — diverting time away from clinical work.',
+    detail: 'Confirmed that patients regularly arrived without adequate sleep deprivation. Staff fielded frequent requests for information that should have been accessible independently, diverting time away from clinical work.',
   },
   {
     source: 'Appointment letter audit',
     stat: '',
-    detail: 'Vague sleep deprivation guidelines. Text-heavy with no hierarchy. Directions assumed prior knowledge of the hospital. Critical information — contact details, cancellation policy — buried in the body copy.',
+    detail: 'Vague sleep deprivation guidelines. Text-heavy with no hierarchy. Directions assumed prior knowledge of the hospital. Critical information (contact details, cancellation policy) buried in the body copy.',
   },
 ]
 
@@ -48,7 +48,7 @@ const hmw = [
   {
     number: '02',
     question: 'How might we better support parents during the sleep deprivation process?',
-    detail: 'By decreasing ineffective tests caused by poor preparation — the root cause of the 15% slot loss.',
+    detail: 'By decreasing ineffective tests caused by poor preparation, the root cause of the 15% slot loss.',
   },
   {
     number: '03',
@@ -61,12 +61,12 @@ const decisions = [
   {
     step: '01',
     heading: 'A gender-neutral teddy bear as the patient',
-    body: 'Rather than written descriptions of the EEG process, we photographed "Alex" — a gender-neutral teddy bear — undergoing the procedure in the actual department. The same clinicians, the same room, the same equipment. Alex arrived at reception, was prepared in the waiting area, and had electrodes applied by clinical staff. Children could see exactly what would happen to them, modelled by something familiar and non-threatening.',
+    body: 'Rather than written descriptions of the EEG process, we photographed "Alex", a gender-neutral teddy bear, undergoing the procedure in the actual department. The same clinicians, the same room, the same equipment. Alex arrived at reception, was prepared in the waiting area, and had electrodes applied by clinical staff. Children could see exactly what would happen to them, modelled by something familiar and non-threatening.',
   },
   {
     step: '02',
     heading: 'Softening the seizure language',
-    body: 'Early prototypes used clinical language around seizure risk. Testing with parents — including a nurse — revealed it was frightening enough to disengage them from the rest of the guide. The section was restructured in partnership with Epilepsy Ireland: what to do, what not to do, and when to call for help, written in plain language without alarming framing. Parents later cited it as one of the most valued sections.',
+    body: 'Early prototypes used clinical language around seizure risk. Testing with parents, including a nurse, revealed it was frightening enough to disengage them from the rest of the guide. The section was restructured in partnership with Epilepsy Ireland: what to do, what not to do, and when to call for help, written in plain language without alarming framing. Parents later cited it as one of the most valued sections.',
   },
   {
     step: '03',
@@ -76,7 +76,7 @@ const decisions = [
   {
     step: '04',
     heading: 'Sleep requirements as a table, not a paragraph',
-    body: 'The original letter described sleep deprivation requirements in dense prose. The redesign used a structured table with icons, broken down by age group — babies, under two, over two, and older children. The requirement varied significantly by age, and parents needed to find their child\'s category instantly under stress. Hierarchy and visual separation did the work that words couldn\'t.',
+    body: 'The original letter described sleep deprivation requirements in dense prose. The redesign used a structured table with icons, broken down by age group: babies, under two, over two, and older children. The requirement varied significantly by age, and parents needed to find their child\'s category instantly under stress. Hierarchy and visual separation did the work that words couldn\'t.',
   },
   {
     step: '05',
@@ -85,18 +85,18 @@ const decisions = [
   },
   {
     step: '06',
-    heading: 'From roadmap to guide — when the format was the problem',
-    body: 'The original concept for the sleep deprivation guide was an unfolding roadmap — a single document that would walk parents through each stage step by step. In early testing it worked well at the beginning, but as parents unfolded further sections the document became cluttered and hard to follow. The linear format that made the start feel manageable made the middle feel overwhelming. The design was restructured into a conventional multi-page guide with clear section headings, letting parents navigate non-linearly and find what they needed without working through what they didn\'t.',
+    heading: 'From roadmap to guide: when the format was the problem',
+    body: 'The original concept for the sleep deprivation guide was an unfolding roadmap, a single document that would walk parents through each stage step by step. In early testing it worked well at the beginning, but as parents unfolded further sections the document became cluttered and hard to follow. The linear format that made the start feel manageable made the middle feel overwhelming. The design was restructured into a conventional multi-page guide with clear section headings, letting parents navigate non-linearly and find what they needed without working through what they didn\'t.',
   },
 ]
 
 const guidePages = [
-  { src: guideNightBefore, alt: 'Night before the EEG', caption: 'Night before — activity suggestions and the step-by-step Teddy Bear Mock EEG walkthrough' },
-  { src: guideMorning, alt: 'Morning of the EEG', caption: 'Morning of the EEG — how to spend the final hours before the appointment' },
-  { src: guideJourney, alt: 'Journey to Temple Street', caption: 'The journey — directions to the department plus a spray bottle game to keep children alert in the car' },
-  { src: guideHome, alt: 'After the EEG', caption: 'After the EEG — what to monitor at home and how results will be communicated' },
-  { src: guideDrawing1, alt: 'Colouring page — koala with EEG electrodes', caption: 'Colouring page — koala with EEG electrodes, keeping children engaged while parents read' },
-  { src: guideDrawing2, alt: 'Colouring page — fox', caption: 'Colouring page — fox illustration, second nocturnal animal page' },
+  { src: guideNightBefore, alt: 'Night before the EEG', caption: 'Night before:activity suggestions and the step-by-step Teddy Bear Mock EEG walkthrough' },
+  { src: guideMorning, alt: 'Morning of the EEG', caption: 'Morning of the EEG:how to spend the final hours before the appointment' },
+  { src: guideJourney, alt: 'Journey to Temple Street', caption: 'The journey:directions to the department plus a spray bottle game to keep children alert in the car' },
+  { src: guideHome, alt: 'After the EEG', caption: 'After the EEG:what to monitor at home and how results will be communicated' },
+  { src: guideDrawing1, alt: 'Colouring page:koala with EEG electrodes', caption: 'Colouring page:koala with EEG electrodes, keeping children engaged while parents read' },
+  { src: guideDrawing2, alt: 'Colouring page:fox', caption: 'Colouring page:fox illustration, second nocturnal animal page' },
 ]
 
 const validationQuotes = [
@@ -109,7 +109,7 @@ const validationQuotes = [
     context: 'Parent, awaiting first sleep-deprived EEG',
   },
   {
-    quote: 'Fantastic improvement on the original. Clear and concise — this will genuinely help families prepare.',
+    quote: 'Fantastic improvement on the original. Clear and concise:this will genuinely help families prepare.',
     context: 'Neurophysiology department staff',
   },
 ]
@@ -130,7 +130,7 @@ export default function TempleStreetCase() {
         </div>
       </div>
 
-      {/* Hero image — full bleed */}
+      {/* Hero image:full bleed */}
       <div className="w-full" style={{ maxHeight: '520px', overflow: 'hidden' }}>
         <img
           src={bearHero}
@@ -164,13 +164,13 @@ export default function TempleStreetCase() {
             <div className="mb-10">
               <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">The challenge</p>
               <p className="text-lg text-slate-900 leading-relaxed font-medium">
-                A sleep-deprived EEG means keeping a young child — often with epilepsy, ASD, or other complex conditions — awake through the night, navigating an unfamiliar hospital in the early morning, and then holding them still while electrodes are attached to their scalp. In 2019, 15% of EEG appointment slots at Children's Health Ireland at Temple Street went unused because families weren't adequately prepared. Parents were failing the process not through negligence but through lack of accessible, understandable information.
+                A sleep-deprived EEG means keeping a young child:often with epilepsy, ASD, or other complex conditions:awake through the night, navigating an unfamiliar hospital in the early morning, and then holding them still while electrodes are attached to their scalp. In 2019, 15% of EEG appointment slots at Children's Health Ireland at Temple Street went unused because families weren't adequately prepared. Parents were failing the process not through negligence but through lack of accessible, understandable information.
               </p>
             </div>
 
             <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">My role</p>
             <p className="text-lg text-slate-500 leading-relaxed mb-10">
-              This was the final major project of my MA in Design at the National College of Art and Design (NCAD), undertaken in direct partnership with the Neurophysiology Department at Children's Health Ireland at Temple Street. I led the end-to-end design process — from research through to validated final deliverables — producing a redesigned appointment letter, a comprehensive sleep deprivation guide for parents, and a restructured department website. The project ran under real constraints: no print budget, time-limited staff access, and a user group under significant emotional stress.
+              This was the final major project of my MA in Design at the National College of Art and Design (NCAD), undertaken in direct partnership with the Neurophysiology Department at Children's Health Ireland at Temple Street. I led the end-to-end design process:from research through to validated final deliverables:producing a redesigned appointment letter, a comprehensive sleep deprivation guide for parents, and a restructured department website. The project ran under real constraints: no print budget, time-limited staff access, and a user group under significant emotional stress.
             </p>
           </div>
         </div>
@@ -181,7 +181,7 @@ export default function TempleStreetCase() {
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-slate-900 mb-3">Research</h2>
           <p className="text-lg text-slate-500 mb-10 max-w-2xl">
-            The project began with a lean sigma report already commissioned by the department — a rare gift of quantified baseline data. That was followed by primary research across three groups.
+            The project began with a lean sigma report already commissioned by the department:a rare gift of quantified baseline data. That was followed by primary research across three groups.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {researchFindings.map((f, i) => (
@@ -215,26 +215,26 @@ export default function TempleStreetCase() {
         </div>
       </section>
 
-      {/* Deliverable 1 — Appointment letter */}
+      {/* Deliverable 1:Appointment letter */}
       <section className="py-12 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Deliverable 01</p>
           <h2 className="text-4xl font-bold text-slate-900 mb-4">Appointment letter</h2>
           <p className="text-lg text-slate-500 mb-10 max-w-2xl">
-            The original letter was text-heavy, assumed knowledge of the hospital layout, and buried critical information — contact details, cancellation policy, sleep deprivation requirements — deep in unstructured prose. The redesign reorganised content by urgency, replaced directions with a basic map, and introduced a structured table for sleep requirements by age group.
+            The original letter was text-heavy, assumed knowledge of the hospital layout, and buried critical information:contact details, cancellation policy, sleep deprivation requirements:deep in unstructured prose. The redesign reorganised content by urgency, replaced directions with a basic map, and introduced a structured table for sleep requirements by age group.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4" style={{ maxWidth: '860px' }}>
             <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-              <img src={appointmentLetterP1} alt="Redesigned Temple Street EEG appointment letter — page 1" className="w-full block" />
+              <img src={appointmentLetterP1} alt="Redesigned Temple Street EEG appointment letter:page 1" className="w-full block" />
             </div>
             <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-              <img src={appointmentLetterP2} alt="Redesigned Temple Street EEG appointment letter — page 2, sleep deprivation table" className="w-full block" />
+              <img src={appointmentLetterP2} alt="Redesigned Temple Street EEG appointment letter:page 2, sleep deprivation table" className="w-full block" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Deliverable 2 — Sleep guide */}
+      {/* Deliverable 2:Sleep guide */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Deliverable 02</p>
@@ -253,7 +253,7 @@ export default function TempleStreetCase() {
                 style={{ aspectRatio: '4/3' }}
               />
               <div className="p-4 bg-white border-t border-slate-100">
-                <p className="text-sm text-slate-500">Alex arriving at Temple Street — the guide walks families through each moment of the visit</p>
+                <p className="text-sm text-slate-500">Alex arriving at Temple Street:the guide walks families through each moment of the visit</p>
               </div>
             </div>
             <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
@@ -264,7 +264,7 @@ export default function TempleStreetCase() {
                 style={{ aspectRatio: '4/3' }}
               />
               <div className="p-4 bg-white border-t border-slate-100">
-                <p className="text-sm text-slate-500">The full EEG setup — equipment, monitoring screen, and the clinical environment children will encounter</p>
+                <p className="text-sm text-slate-500">The full EEG setup:equipment, monitoring screen, and the clinical environment children will encounter</p>
               </div>
             </div>
           </div>
@@ -288,23 +288,23 @@ export default function TempleStreetCase() {
         </div>
       </section>
 
-      {/* Deliverable 3 — Website */}
+      {/* Deliverable 3:Website */}
       <section className="py-12 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Deliverable 03</p>
           <h2 className="text-4xl font-bold text-slate-900 mb-4">Department website</h2>
           <p className="text-lg text-slate-500 mb-10 max-w-2xl">
-            The department's existing web presence mirrored the problems in the letter — unstructured, difficult to scan, and lacking the practical information parents needed before the appointment. The redesign reorganised content around the parent journey, surfacing preparation requirements and contact information without requiring users to read the whole page.
+            The department's existing web presence mirrored the problems in the letter:unstructured, difficult to scan, and lacking the practical information parents needed before the appointment. The redesign reorganised content around the parent journey, surfacing preparation requirements and contact information without requiring users to read the whole page.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
             <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-              <img src={websiteScreen1} alt="Redesigned Temple Street EEG department website — top of page" className="w-full block" />
+              <img src={websiteScreen1} alt="Redesigned Temple Street EEG department website:top of page" className="w-full block" />
             </div>
             <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-              <img src={websiteScreen2} alt="Redesigned Temple Street EEG department website — preparation section" className="w-full block" />
+              <img src={websiteScreen2} alt="Redesigned Temple Street EEG department website:preparation section" className="w-full block" />
             </div>
             <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-              <img src={websiteScreen3} alt="Redesigned Temple Street EEG department website — contact and FAQ section" className="w-full block" />
+              <img src={websiteScreen3} alt="Redesigned Temple Street EEG department website:contact and FAQ section" className="w-full block" />
             </div>
           </div>
         </div>
@@ -333,7 +333,7 @@ export default function TempleStreetCase() {
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-slate-900 mb-4">Validation</h2>
           <p className="text-lg text-slate-500 mb-10 max-w-2xl">
-            The final guide was shared with 40 parents. Nine responded — a strong return rate for an unsolicited design validation. The appointment letter and guide were reviewed by two department staff members, who provided language feedback on the seizure section and confirmed the letter layout was a clear improvement.
+            The final guide was shared with 40 parents. Nine responded:a strong return rate for an unsolicited design validation. The appointment letter and guide were reviewed by two department staff members, who provided language feedback on the seizure section and confirmed the letter layout was a clear improvement.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {validationQuotes.map((q, i) => (
