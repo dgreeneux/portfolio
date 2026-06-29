@@ -222,7 +222,7 @@ export default function TempleStreetCase() {
           <p className="text-lg text-slate-500 mb-10 max-w-2xl">
             The original letter was text-heavy, assumed knowledge of the hospital layout, and buried critical information — contact details, cancellation policy, sleep deprivation requirements — deep in unstructured prose. The redesign reorganised content by urgency, replaced directions with a basic map, and introduced a structured table for sleep requirements by age group.
           </p>
-          <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+          <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm" style={{ maxWidth: '480px' }}>
             <img
               src={appointmentLetter}
               alt="Redesigned Temple Street EEG appointment letter"
@@ -294,17 +294,15 @@ export default function TempleStreetCase() {
           <p className="text-lg text-slate-500 mb-10 max-w-2xl">
             The department's existing web presence mirrored the problems in the letter — unstructured, difficult to scan, and lacking the practical information parents needed before the appointment. The redesign reorganised content around the parent journey, surfacing preparation requirements and contact information without requiring users to read the whole page.
           </p>
-          <div className="space-y-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
             <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
               <img src={websiteScreen1} alt="Redesigned Temple Street EEG department website — top of page" className="w-full block" />
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-                <img src={websiteScreen2} alt="Redesigned Temple Street EEG department website — preparation section" className="w-full block" />
-              </div>
-              <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-                <img src={websiteScreen3} alt="Redesigned Temple Street EEG department website — contact and FAQ section" className="w-full block" />
-              </div>
+            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+              <img src={websiteScreen2} alt="Redesigned Temple Street EEG department website — preparation section" className="w-full block" />
+            </div>
+            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+              <img src={websiteScreen3} alt="Redesigned Temple Street EEG department website — contact and FAQ section" className="w-full block" />
             </div>
           </div>
         </div>
