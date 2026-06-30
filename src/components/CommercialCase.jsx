@@ -162,7 +162,7 @@ export default function CommercialCase() {
               {[
                 { metric: '10 Nov 2025', label: 'technical go-live for the PI digital portal' },
                 { metric: '5', label: 'broker portals live by January 2026' },
-                { metric: 'BAU', label: 'platform handed to advisory support, June 2026. Active implementation complete.' },
+                { metric: 'BAU', label: 'Business-as-usual: platform maintained by an ongoing advisory team from June 2026. Active implementation complete.' },
               ].map(({ metric, label }) => (
                 <div key={metric}>
                   <p className="text-2xl font-bold text-slate-900 mb-1">{metric}</p>

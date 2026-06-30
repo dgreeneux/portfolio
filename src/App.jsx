@@ -17,7 +17,7 @@ function Hero() {
         <p className="hero-eyebrow">Lead UX Designer · Dublin</p>
         <h1 className="hero-name">David Greene</h1>
         <p className="hero-bio">
-          Dublin-based UX lead specialising in regulated insurance products and scalable digital platforms. I focus on systems thinking and delivery pragmatism: designing white-label architectures, protecting scope under pressure, and maintaining quality when requirements shift. I mentor designers on craft and confidence, run UX education sessions across the wider team, and have applied structured research to surface process friction invisible in the backlog. MA in Design, NCAD, completed in partnership with the Neurophysiology Department at Children's Health Ireland.
+          Dublin-based UX lead specialising in regulated insurance products and scalable digital platforms. I design white-label architectures that scale across multiple partners, protect scope under pressure, and maintain quality when requirements shift. I mentor designers on craft and confidence, run UX education sessions across the wider team, and have run structured research to surface process friction invisible in the backlog. MA in Design, NCAD, completed in partnership with the Neurophysiology Department at Children's Health Ireland.
         </p>
         <div className="hero-links">
           <a href="https://www.linkedin.com/in/david-m-greene/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -54,7 +54,7 @@ const approach = [
     body: 'I mentor designers on both craft and confidence, run UX education sessions for developers and business analysts, and have led on hiring and building design capability across the team. I have also created reusable design infrastructure (including a baseline line-of-business template) to reduce ramp-up time on future engagements.',
   },
   {
-    heading: 'Know the rules before you design',
+    heading: 'Constraints define the brief',
     body: 'Timeline, architecture, stakeholder power, contractual scope: these are not obstacles to good design, they define what good design means in this context. I establish those constraints first, then find the best achievable solution within them.',
   },
   {

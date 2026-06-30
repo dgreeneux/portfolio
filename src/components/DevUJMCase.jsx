@@ -198,10 +198,10 @@ export default function DevUJMCase() {
         <div className="max-w-[1100px] mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Outcome</p>
           <p className="text-lg text-slate-900 leading-relaxed font-medium mb-6">
-            The findings were presented to the wider professional services group. The session format and materials were shared with UX designers in Kuala Lumpur and Toronto, who used them to run equivalent sessions with their own development teams independently.
+            The session format and materials were shared with UX designers in Kuala Lumpur and Toronto, who used them to run equivalent sessions with their own development teams independently. The findings were also presented to the wider professional services group.
           </p>
           <p className="text-lg text-slate-500 leading-relaxed">
-            The value of the session was less in the individual findings (most of which experienced designers would have guessed) and more in making them visible and shared. Developers who had been navigating these friction points in isolation could see that their experience was structural, not personal. That shift in framing is what makes process change possible.
+            The value of the session was less in producing surprising findings and more in making their cumulative cost visible and shared. Developers who had been navigating these friction points in isolation could see that their experience was structural, not personal. That shift in framing is what makes process change possible.
           </p>
         </div>
       </section>

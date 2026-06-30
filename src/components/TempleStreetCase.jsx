@@ -98,8 +98,8 @@ const guidePages = [
   { src: guideMorning, alt: 'Morning of the EEG', caption: 'Morning of the EEG: how to spend the final hours before the appointment' },
   { src: guideJourney, alt: 'Journey to Temple Street', caption: 'The journey: directions to the department plus a spray bottle game to keep children alert in the car' },
   { src: guideHome, alt: 'After the EEG', caption: 'After the EEG: what to monitor at home and how results will be communicated' },
-  { src: guideDrawing1, alt: 'Colouring page:koala with EEG electrodes', caption: 'Colouring page:koala with EEG electrodes, keeping children engaged while parents read' },
-  { src: guideDrawing2, alt: 'Colouring page:fox', caption: 'Colouring page:fox illustration, second nocturnal animal page' },
+  { src: guideDrawing1, alt: 'Colouring page: koala with EEG electrodes', caption: 'Colouring page: koala with EEG electrodes, keeping children engaged while parents read' },
+  { src: guideDrawing2, alt: 'Colouring page: fox', caption: 'Colouring page: fox illustration, second nocturnal animal page' },
 ]
 
 const validationQuotes = [
@@ -293,7 +293,7 @@ export default function TempleStreetCase() {
                 style={{ aspectRatio: '4/3' }}
               />
               <div className="p-4 bg-white border-t border-slate-100">
-                <p className="text-sm text-slate-500">Alex arriving at Temple Street:the guide walks families through each moment of the visit</p>
+                <p className="text-sm text-slate-500">Alex arriving at Temple Street: the guide walks families through each moment of the visit</p>
               </div>
             </div>
             <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
@@ -304,7 +304,7 @@ export default function TempleStreetCase() {
                 style={{ aspectRatio: '4/3' }}
               />
               <div className="p-4 bg-white border-t border-slate-100">
-                <p className="text-sm text-slate-500">The full EEG setup:equipment, monitoring screen, and the clinical environment children will encounter</p>
+                <p className="text-sm text-slate-500">The full EEG setup: equipment, monitoring screen, and the clinical environment children will encounter</p>
               </div>
             </div>
           </div>
@@ -334,7 +334,7 @@ export default function TempleStreetCase() {
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Deliverable 03</p>
           <h2 className="text-4xl font-bold text-slate-900 mb-4">Department website</h2>
           <p className="text-lg text-slate-500 mb-10">
-            The department's existing web presence mirrored the problems in the letter:unstructured, difficult to scan, and lacking the practical information parents needed before the appointment. The redesign reorganised content around the parent journey, surfacing preparation requirements and contact information without requiring users to read the whole page.
+            The department's existing web presence mirrored the problems in the letter: unstructured, difficult to scan, and lacking the practical information parents needed before the appointment. The redesign reorganised content around the parent journey, surfacing preparation requirements and contact information without requiring users to read the whole page.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
             <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
