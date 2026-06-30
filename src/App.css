@@ -103,8 +103,15 @@ a { color: inherit; }
 
 .how-i-lead-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  grid-template-columns: 1fr;
   gap: 2rem;
+}
+
+@media (min-width: 900px) {
+  .how-i-lead-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
 }
 
 .how-i-lead-item h3 {
